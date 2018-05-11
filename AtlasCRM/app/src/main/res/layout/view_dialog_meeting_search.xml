@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white_color"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/text_48"
+                android:textSize="@dimen/text_big" />
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginBottom="@dimen/back_gauge_big_huge" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_person_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/meeting_filter_person_num" />
+
+                <EditText
+                    android:id="@+id/et_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_person_num"
+                    android:background="@null"
+                    android:hint="@string/hold_person_num"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="@dimen/back_gauge_big"
+                    android:text="5"
+                    android:textColor="@color/black" />
+
+                <View
+                    style="@style/devide_line"
+                    android:layout_alignLeft="@id/et_people"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/back_gauge_small" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_item_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/meeting_filter_date" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_date"
+                    android:background="@null"
+                    android:hint="@string/start_time"
+                    android:drawablePadding="@dimen/back_gauge_big"
+                    android:drawableRight="@drawable/arr_down"
+                    android:paddingLeft="@dimen/back_gauge_big"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/v_date_line"
+                    style="@style/devide_line"
+                    android:layout_alignLeft="@id/tv_date"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/back_gauge_small" />
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/v_date_line"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/back_gauge_big"
+                    android:src="@drawable/arr_down" />-->
+            </RelativeLayout>
+
+
+            <View
+                style="@style/devide_line"
+                android:layout_marginTop="@dimen/back_gauge_big_huge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/cancel" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/divider_gray"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/btn_yellow"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="@color/white_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/back_gauge_big"
+        android:layout_marginLeft="@dimen/back_gauge_big"
+        android:layout_centerInParent="true">
+
+        <com.atlas.crmapp.view.CodeDialogTopInfoView
+            android:id="@+id/rl_code_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_code_top"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/rl_code_top"
+            android:layout_alignRight="@id/rl_code_top"
+            android:paddingBottom="@dimen/back_gauge_big_huge"
+            android:background="@drawable/bg_white_bottom_circular">
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/back_gauge_big" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/back_gauge_big"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                android:text="@string/code_info"
+                android:textColor="@color/gray_simple" />
+
+            <TextView
+                android:id="@+id/tv_open_room"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_info"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_left_right_circle_yellow"
+                android:gravity="center"
+                android:text="@string/text_46"
+                android:visibility="gone"
+                android:textSize="@dimen/text_big" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.atlas.crmapp.view.KProgressHUDView
+                android:id="@+id/v_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/include_title"
+        style="@style/TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            style="@style/button_back"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/titleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/arrow_down_white"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:maxLength="20" />
+
+        <ImageButton
+            android:id="@+id/ibHome"
+            style="@style/button_title"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_more"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

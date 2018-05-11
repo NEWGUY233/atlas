@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/score_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/status_bar_height"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_score"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FF2B3039"
+            android:textSize="60sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_score"
+                android:layout_alignBottom="@+id/tv_score"
+                android:layout_toEndOf="@+id/tv_score"
+                android:layout_toRightOf="@+id/tv_score"
+                android:text="@string/text_score_"
+                android:textColor="#FF2B3039"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_submit"
+        style="@style/SubmitButtonLeftRight"
+        android:layout_width="230dp"
+        android:layout_gravity="center"
+        android:layout_height="34dp"
+        android:textSize="14sp"
+        android:text="@string/user_score_dh" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp"
+        android:textSize="18sp"
+        android:text="@string/user_score_jfmx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/include_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

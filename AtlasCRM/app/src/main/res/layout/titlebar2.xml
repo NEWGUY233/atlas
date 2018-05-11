@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ibBack"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="0">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/button_back"
+            android:layout_width="40dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/text_title"
+        android:layout_gravity="center"
+        android:text="" />
+
+
+    <ImageButton
+        android:id="@+id/ibHome"
+        style="@style/button_title"
+        android:layout_width="40dp"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

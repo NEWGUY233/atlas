@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_click_dismiss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_bg">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:id="@+id/v_card"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/popup_margin_left_right"
+        android:layout_marginRight="@dimen/popup_margin_left_right"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color">
+
+
+            <tangxiaolv.com.library.EffectiveShapeView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic_pay_bg"
+                 />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_big_huge"
+                android:layout_marginRight="@dimen/back_gauge_big"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_top_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v1"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_need_yay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000元"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/tv_free_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共优惠**元" />
+
+                </LinearLayout>
+
+                <com.atlas.crmapp.view.PayChannelView
+                    android:id="@+id/v_pay_accout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_top_money"
+                    android:layout_marginTop="40dp" />
+
+                <View style="@style/devide_line" />
+
+                <com.atlas.crmapp.view.PayChannelView
+                    android:id="@+id/v_pay_ali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_pay_accout" />
+
+                <View style="@style/devide_line" />
+
+                <com.atlas.crmapp.view.PayChannelView
+                    android:id="@+id/v_pay_wx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_pay_ali" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/btn_yellow"
+                android:text="@string/text_40" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/btn_close"
+        android:layout_marginTop="@dimen/popu_close_margin_top"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_card"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

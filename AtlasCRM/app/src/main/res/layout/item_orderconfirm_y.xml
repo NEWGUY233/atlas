@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/couponView"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white_color"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/back_gauge_big">
+
+        <TextView
+            android:id="@+id/coupon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="寰图咖啡 兑换券一份"
+            android:textColor="@color/background_color_black" />
+
+        <TextView
+            android:id="@+id/coupon_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="有效期：2017/03/03"
+            android:textColor="@color/center_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/coupon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="30"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/coupon_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/coupon_price"
+            android:layout_marginLeft="@dimen/back_gauge_standard"
+            android:layout_toRightOf="@id/coupon_price"
+            android:text="满XX可用"
+            android:textColor="@color/center_gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+         />
+
+
+</RelativeLayout>

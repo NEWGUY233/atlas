@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="@dimen/item_hight_small"
+    >
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_big"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_gauge_large"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/text_65"/>
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/back_gauge_small"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/back_gauge_big"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textSize="@dimen/text_standard"
+                android:textColor="@color/gray"
+                android:layout_marginRight="@dimen/back_gauge_small"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_next">
+
+            </ImageView>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/MenuItem"
+        android:id="@+id/tv_corporation_rights"
+        >
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ease_mm_title_remove"
+            />
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="清除聊天纪录"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+</LinearLayout>

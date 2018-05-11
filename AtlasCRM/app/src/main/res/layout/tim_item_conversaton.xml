@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69dp">
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:layout_marginLeft="17dp"
+        android:layout_centerVertical="true"
+        android:src="@color/bg_gray"
+        android:id="@+id/icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:paddingLeft="7dp"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:text=""
+        android:textColor="#FF2B3039"
+        android:textSize="14sp" />
+
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/content"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:text=""
+        android:textColor="#FF939393"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFF4F4F4"
+        />
+
+    <TextView
+        android:id="@+id/unread_text"
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_alignTop="@+id/icon"
+        android:layout_alignRight="@id/icon"
+        android:background="@drawable/bg_red_circle"
+        android:layout_width="14dp"
+        android:gravity="center"
+        android:layout_height="14dp"
+        android:text="0"
+        android:textColor="#FFFFFFFF"
+        android:textSize="8sp"
+        />
+</RelativeLayout>

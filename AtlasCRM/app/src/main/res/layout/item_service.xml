@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_hight"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/back_gauge_huge"
+    android:paddingRight="@dimen/back_gauge_huge">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="服务名称"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/back_gauge_standard"
+        android:background="@drawable/button_yellow"
+        android:padding="@dimen/back_gauge_small"
+        android:text="@string/meeting_room_book"
+        android:textColor="@color/white_color" />
+
+    <View
+        style="@style/devide_line"
+        android:background="@color/divider_gray_simple"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

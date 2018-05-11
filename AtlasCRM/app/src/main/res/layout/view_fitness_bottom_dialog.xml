@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_dismiss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_bg">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/popup_margin_left_right"
+        android:layout_marginRight="@dimen/popup_margin_left_right"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color">
+
+                <tangxiaolv.com.library.EffectiveShapeView
+                    android:id="@+id/shape_iv"
+                    android:layout_width="100dp"
+                    android:layout_height="66dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_product_thum"
+                    app:shape="round_rectangle" />
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/shape_iv"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/back_gauge_small"
+                    android:layout_toRightOf="@id/shape_iv"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:text="标题"
+                    android:textColor="@color/black_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sub_title"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_name"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginRight="@dimen/back_gauge_standard"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="2"
+                    android:lineSpacingExtra="2sp"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/text_49"
+                    android:textColor="@color/gray_simple" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1380"
+                    android:textColor="@color/orange"
+                    android:textSize="22sp"
+                    android:layout_marginRight="@dimen/back_gauge_big"
+                    android:layout_alignBottom="@+id/tv_sub_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <View
+                    style="@style/DividerHorizontal"
+                    android:layout_alignLeft="@id/tv_name"
+                    android:layout_below="@id/shape_iv"
+                    android:layout_marginLeft="-12dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="34dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_50"
+                    android:textColor="@color/gray_simple" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="44dp"
+                    android:gravity="right|center_vertical"
+                    android:text="2017.4.7"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginLeft="@dimen/back_gauge_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="34dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_51"
+                    android:textColor="@color/gray_simple"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:gravity="right"
+                    android:text="雅居乐" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btn_pay"
+                style="@style/SubmitButtonNoRadius"
+                android:textSize="@dimen/text_big"
+                android:text="@string/text_52" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

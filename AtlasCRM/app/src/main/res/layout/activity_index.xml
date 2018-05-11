@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/index_fragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></FrameLayout>
+
+    <include
+        layout="@layout/include_index_btm"
+        />
+
+
+</LinearLayout>

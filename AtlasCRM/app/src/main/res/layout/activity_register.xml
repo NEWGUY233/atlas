@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:padding="@dimen/back_gauge_huge"
+    tools:context="com.atlas.crmapp.register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/back_gauge_huge">
+
+        <TextView
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/skip"
+            android:textColor="@color/gray_simple"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_reg_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ibBack"
+            android:layout_gravity="left"
+            android:src="@drawable/logo_atlas_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_reg_logo"
+            android:text="@string/welcome_text"
+            android:textSize="@dimen/text_huge" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_marginTop="39dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_area"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_china"
+            android:textColor="#FF939393"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:paddingLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            android:textColor="#FF939393"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/please_input_hone_num"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="@dimen/text_big" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:background="@color/divider_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/back_gauge_large"
+            android:gravity="center_vertical">
+
+
+            <com.atlas.crmapp.view.VerifyCodeView
+                android:id="@+id/v_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+            </com.atlas.crmapp.view.VerifyCodeView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_gravity="right"
+                    android:id="@+id/btnCode"
+                    style="@style/SubmitButtonGrayLeftRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingLeft="23dp"
+                    android:paddingRight="23dp"
+                    android:text="@string/click_get"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_voice"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code_text"
+                android:textColor="#FF939393"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code_text_"
+                android:textColor="#FFFED505"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/SubmitButtonLeftRight"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="25dp"
+            android:alpha="0.5"
+            android:text="@string/register_login"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textSize="10sp"
+            android:textColor="@color/gray_simple" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <View style="@style/item_menu_group" />
+
+    <LinearLayout
+        android:id="@+id/item_my_order"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_my_order" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_23" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_my_reservation"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_my_reservation" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_24" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+
+    <LinearLayout
+        android:id="@+id/item_my_wallet"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_my_wallet" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_25" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/back_gauge_standard"
+            android:text=""
+            android:textColor="@color/gray_simple" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_my_score"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/icon_score" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/user_center_score" />
+
+        <TextView
+            android:id="@+id/tv_core"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/back_gauge_standard"
+            android:text=""
+            android:textColor="@color/gray_simple" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View
+        style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_my_code"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_code" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/my_code" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View
+        style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_my_act"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@mipmap/profile_icon_dynamic" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/my_act" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_my_coupon"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_my_coupon" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/my_coupon" />
+
+        <RelativeLayout
+            style="@style/UserCenterItemArrow"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_user_arrow_right" />
+
+            <ImageView
+                android:id="@+id/iv_coupn_red_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/bn_iv_user"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bn_iv_user"
+                android:background="@drawable/em_unread_dot"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/item_menu_group" />
+
+    <LinearLayout
+        android:id="@+id/item_corporate_account"
+        style="@style/item_standard_huge_left_right"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_corporate_account" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_26" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_line_corporate_account"
+        style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/item_my_company"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_corporate_account" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/user_center_company" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_line_corporate_account1"
+        style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_vip_benefit"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_vip_benefit" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/vip_benefit" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/line_print"
+        style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/item_my_print"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/icon_print" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/user_center_print" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_corporate"
+        style="@style/item_menu_group" />
+
+    <LinearLayout
+        android:id="@+id/item_user_info"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_info" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_27" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/item_setting"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_user_setting" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/text_28" />
+
+        <ImageView
+            android:id="@+id/iv_setting_red_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/em_unread_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+
+
+    </LinearLayout>
+
+    <View style="@style/item_menu_group" />
+</LinearLayout>

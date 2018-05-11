@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_main"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/titlebar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/back_gauge_large"
+            android:layout_marginTop="24dp"
+            android:text="@string/visit_invite"
+            android:textSize="@dimen/text_huge"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/et_visit_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint="@string/visit_center"
+                android:textColorHint="@color/gray_simple" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/back_gauge_standard"
+                android:src="@drawable/ic_gary_arr_right" />
+
+            <View
+                style="@style/devide_simple_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:focusable="false">
+
+            <EditText
+                android:id="@+id/et_visit_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint="@string/visit_time"
+                android:textColorHint="@color/gray_simple" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="@dimen/back_gauge_standard"
+                android:src="@drawable/ic_gary_arr_right" />
+
+            <View
+                style="@style/devide_simple_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight_big"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/back_gauge_standard">
+
+            <EditText
+                android:id="@+id/et_visit_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/visit_num"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColorHint="@color/gray_simple" />
+
+
+            <View
+                style="@style/devide_simple_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight_big"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/back_gauge_standard">
+
+            <EditText
+                android:id="@+id/et_visit_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/visit_purpose"
+                android:textColorHint="@color/gray_simple" />
+
+
+            <View
+                style="@style/devide_simple_line"
+                android:layout_alignParentBottom="true" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_send_visit"
+            style="@style/SubmitButtonLeftRight"
+            android:layout_marginTop="70dp"
+            android:alpha="0.5"
+            android:clickable="false"
+            android:text="@string/send_visit" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/visit_step_info" />
+    </LinearLayout>
+
+</RelativeLayout>

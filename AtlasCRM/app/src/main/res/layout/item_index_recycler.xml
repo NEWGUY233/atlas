@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/error_1"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="21dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_mes_error"
+        android:background="#FF575757"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="动态发送失败"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        />
+
+    <RelativeLayout
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.atlas.crmapp.widget.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="34dp"
+            android:src="#e5e5e5"
+            android:layout_marginRight="6dp"
+            android:layout_height="34dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_icon"
+            android:id="@+id/ll_name"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="4dp"
+            android:textColor="#FF2B3039"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_title"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_grey_index_shape"
+            android:text="雅居乐中心"
+            android:textColor="#A3939393"
+            android:textSize="9sp"
+            />
+
+            <ImageView
+                android:id="@+id/iv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tips_icon_offical"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_below="@id/ll_name"
+            android:layout_toRightOf="@id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF939393"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:visibility="gone"
+            android:layout_alignBaseline="@id/tv_company"
+            android:layout_alignParentRight="true"
+            android:layout_width="82dp"
+            android:layout_height="16dp"
+            android:text="18-01-02 08:09"
+            android:textColor="#FF939393"
+            android:textSize="11sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF2B3039"
+        android:textSize="14sp"
+        />
+
+    <include
+        android:id="@+id/include_content"
+        layout="@layout/include_item_index_recycler"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_tag"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_circle_"
+            android:textColor="#FF939393"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="#FFFABBA9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_location"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text=""
+            android:textColor="#FF939393"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFEEF1F3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="51dp">
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/icon_comment_unsel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tv_num_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999"
+                android:textColor="#FF2B3039"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="#FFEEF1F3"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_like"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_like"
+                android:src="@mipmap/icon_like_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tv_num_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999"
+                android:textColor="#FF2B3039"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#FFEEF1F3"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/error_2"
+        android:background="#FFEEF1F3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        <ImageView
+            android:src="@mipmap/icon_mes_error"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送失败，轻触以再次发送"
+            android:textColor="#FF939393"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>

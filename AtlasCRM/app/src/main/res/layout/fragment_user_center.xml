@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_register_top">
+
+                    <com.atlas.crmapp.widget.CircleImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/back_gauge_huge"
+                        android:layout_marginRight="@dimen/back_gauge_large"
+                        android:layout_marginTop="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_avatar"
+                        android:layout_marginTop="@dimen/back_gauge_standard"
+                        android:layout_toRightOf="@id/iv_avatar"
+                        android:text="@string/text_5"
+                        android:textSize="@dimen/text_big_large" />
+
+                    <TextView
+                        android:id="@+id/tv_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_nick"
+                        android:layout_below="@id/tv_nick"
+                        android:paddingRight="@dimen/back_gauge_small"
+                        android:paddingTop="@dimen/back_gauge_small"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_center"
+                        android:layout_toRightOf="@id/iv_avatar"
+                        android:text="@string/text_5"
+                        android:textColor="@color/gray_simple"
+                        android:textSize="@dimen/text_small" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <include layout="@layout/layout_user_center" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

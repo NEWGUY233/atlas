@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:duration="100" android:drawable="@drawable/anime_arrow1" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow2" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow3" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow4" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow5" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow6" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow7" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow8" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow9" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow10" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow11" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow12" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow13" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow14" />
+    <item android:duration="100" android:drawable="@drawable/anime_arrow15" />-->
+</animation-list>

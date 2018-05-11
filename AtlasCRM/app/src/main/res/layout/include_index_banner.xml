@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_all_"
+    android:layout_height="wrap_content">
+
+    <com.atlas.crmapp.view.IndexTopViewpager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include_viewpager"
+        android:visibility="gone"/>
+
+
+    <com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView_
+        android:visibility="visible"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView_>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_6"
+            android:textColor="#FF2B3039"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_active_tag"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_act"
+            android:drawableRight="@drawable/ic_user_arrow_right"
+            android:textColor="#FF939393"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_active"
+        android:layout_width="match_parent"
+        android:paddingBottom="25dp"
+        android:layout_height="125dp"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#FFEEF1F3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:layout_height="82dp">
+        
+        <com.atlas.crmapp.widget.CircleImageView
+            android:id="@+id/iv_user_icon"
+            android:src="#e5e5e5"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_share"
+            android:textColor="#FF2B3039"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="@string/index_news_submit"
+            android:textColor="#FF2B3039"
+            android:textSize="15sp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_yellow_index_submit"
+            android:layout_width="80dp"
+            android:layout_height="36dp" />
+        
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#FFEEF1F3"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/pop"
+            layout="@layout/include_index_float_title"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/pop"
+            android:id="@+id/recyclerView_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/re_pop"
+            android:layout_marginRight="28dp"
+            android:minWidth="100dp"
+            android:layout_alignRight="@id/pop"
+            android:layout_below="@id/pop"
+            android:background="@mipmap/tab_withshadow_little"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</LinearLayout>

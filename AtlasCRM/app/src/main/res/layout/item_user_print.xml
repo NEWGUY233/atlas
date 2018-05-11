@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号：0001"
+            android:textColor="#FFBDBDBD"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在校验"
+            android:textColor="#FF939393"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_below="@id/tv_order_num"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:background="#FFF6F6F6"
+            android:layout_height="0.5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="年会海报.pdf"
+            android:textColor="#FF2B3039"
+            android:textSize="14sp"
+            />
+
+            <TextView
+                android:id="@+id/tv_check_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成功"
+                android:textColor="#FF69BD45"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/tv_type"
+            android:layout_below="@id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A3 / 彩色"
+            android:textColor="#FFBDBDBD"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_below="@id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-09-23 15:30:34"
+            android:textColor="#FFBDBDBD"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_r_page"
+            android:layout_alignBaseline="@id/tv_type"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际完成页数：10"
+            android:textColor="#FFBDBDBD"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_page_order"
+            android:layout_below="@id/tv_r_page"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页数：10"
+            android:textColor="#FFBDBDBD"
+            android:textSize="12sp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

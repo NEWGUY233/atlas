@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bg_gray"
+              tools:context="com.atlas.crmapp.workplace.MyMeetingCalendarActivity">
+
+    <include
+        layout="@layout/layout_simple_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/ib_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="32dp"
+            android:paddingLeft="32dp"
+            android:src="@drawable/ic_calendar_left"/>
+
+        <TextView
+            android:id="@+id/tv_data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="32dp"
+            android:text="2017年6月"
+            android:textColor="@color/text_dark"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/ib_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="32dp"
+            android:paddingLeft="32dp"
+            android:src="@drawable/ic_calendar_right"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        >
+        <View
+            android:id="@+id/view_cal_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/bg_gray"/>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="2dp"
+            app:compactCalendarBackgroundColor="#0000"
+            app:compactCalendarCurrentDayBackgroundColor="@color/text_light_gray"
+            app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/theme_yellow"
+            app:compactCalendarDisplayOtherMonthDays="true"
+            app:compactCalendarEventIndicatorStyle="small_indicator"
+            app:compactCalendarOtherMonthDaysTextColor="@color/text_light_gray"
+            app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+            app:compactCalendarTargetHeight="210dp"
+            app:compactCalendarTextColor="@color/text_dark"
+            app:compactCalendarTextSize="@dimen/text_standard" />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/meeting_recylclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_gray" />
+
+</LinearLayout>

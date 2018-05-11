@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:background="@color/white_color">
+
+
+        <ImageView
+            android:id="@+id/iv_coach_header"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/white_color"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_personal_coach_detail_top" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                android:text="@string/coach_room"
+                android:textColor="@color/gray_simple"
+                android:textSize="@dimen/text_small" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:src="@drawable/white_back"
+            android:layout_marginTop="@dimen/back_gauge_big"
+            android:paddingLeft="@dimen/back_gauge_big"
+            android:padding="@dimen/back_gauge_large"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/back_gauge_big"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:minHeight="@dimen/item_hight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/coach_zz"
+                android:textSize="@dimen/text_big" />
+
+
+            <TextView
+                android:id="@+id/tv_aptitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/back_gauge_big"
+                android:layout_marginRight="@dimen/back_gauge_big"
+                android:textColor="@color/gray_simple" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/devide_line"
+            android:layout_marginLeft="@dimen/back_gauge_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/back_gauge_big">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coach_jj"
+                android:textSize="@dimen/text_big" />
+
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_big"
+                android:layout_marginRight="@dimen/back_gauge_big"
+                android:lineSpacingExtra="@dimen/line_spacing_extra"
+                android:textColor="@color/gray_simple" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

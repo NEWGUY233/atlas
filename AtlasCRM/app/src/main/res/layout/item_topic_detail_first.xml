@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_first"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginBottom="@dimen/back_gauge_big"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_dashed_border"
+    android:clickable="true"
+    android:onClick="hideKeyboard">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_write_comment"
+        android:drawablePadding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

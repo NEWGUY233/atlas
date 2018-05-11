@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        style="@style/button_back"
+        android:layout_width="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/text_title"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+    <!--下期-->
+    <ImageView
+        android:id="@+id/iv_market"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/back_gauge_large"
+        android:visibility="gone"
+        android:src="@drawable/ic_market" />
+    <!--下期-->
+    <cn.bingoogolapple.badgeview.BGABadgeImageView
+        android:id="@+id/ibHome"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/back_gauge_small"
+        android:layout_marginTop="@dimen/back_gauge_small"
+        android:background="@null"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

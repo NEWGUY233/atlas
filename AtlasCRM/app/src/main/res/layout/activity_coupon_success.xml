@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/popup_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.atlas.crmapp.view.ResizableImageView
+            android:id="@+id/iv_coupon_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/get_coupon_success" />
+
+
+        <View
+            android:id="@+id/v_start_coupon"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/iv_coupon_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/back_gauge_big" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:src="@drawable/btn_close"
+        android:padding="@dimen/back_gauge_huge"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

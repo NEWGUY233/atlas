@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/back_gauge_small"
+    android:layout_marginRight="@dimen/back_gauge_small"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/back_gauge_standard"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linear_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/order_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已完成"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text_standard" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/order_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/back_gauge_big"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <tangxiaolv.com.library.EffectiveShapeView
+                    android:id="@+id/iv_product_logo_1"
+                    style="@style/OrderLogoImage"
+                    android:layout_marginLeft="0dp"
+                    app:shape="round_rectangle" />
+
+                <tangxiaolv.com.library.EffectiveShapeView
+                    android:id="@+id/iv_product_logo_2"
+                    style="@style/OrderLogoImage"
+                    app:shape="round_rectangle" />
+
+                <tangxiaolv.com.library.EffectiveShapeView
+                    android:id="@+id/iv_product_logo_3"
+                    style="@style/OrderLogoImage"
+                    app:shape="round_rectangle" />
+
+                <RelativeLayout style="@style/OrderLogoImage">
+
+                    <tangxiaolv.com.library.EffectiveShapeView
+                        android:id="@+id/iv_product_logo_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:shape="round_rectangle" />
+
+                    <TextView
+                        android:id="@+id/tv_product_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/button_simple_transparent"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_huge"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2017.03.03"
+                    android:textColor="@color/gray_simple"
+                    android:textSize="@dimen/text_standard" />
+
+                <TextView
+                    android:id="@+id/order_number_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_num_product"
+                    android:textColor="@color/gray_simple"
+                    android:textSize="@dimen/text_standard" />
+
+
+                <TextView
+                    android:id="@+id/order_price_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ￥20"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

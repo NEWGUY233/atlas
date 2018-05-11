@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF1F1F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#FFF1F1F1"
+        />
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/ll_header_icon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="@dimen/back_gauge_huge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/header_icon"
+            />
+
+
+        <com.atlas.crmapp.widget.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="@dimen/back_gauge_standard"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:src="@drawable/header_icon" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/arrow_hight"
+            android:layout_marginLeft="@dimen/back_gauge_big"
+            android:src="@drawable/ic_user_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+     <com.atlas.crmapp.view.UserInfoItemView
+         android:id="@+id/v_birthday"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+      <View style="@style/UserCenterItemLineStyle" />
+
+        <com.atlas.crmapp.view.UserInfoItemView
+            android:id="@+id/v_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/UserCenterItemLineStyle" />
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:visibility="gone"
+        style="@style/UserCenterItemLineStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#FFF1F1F1"
+        />
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/UserCenterItemLineStyle" />
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#FFF1F1F1"
+        />
+
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/UserCenterItemLineStyle" />
+
+
+    <com.atlas.crmapp.view.UserInfoItemView
+        android:id="@+id/v_crow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>

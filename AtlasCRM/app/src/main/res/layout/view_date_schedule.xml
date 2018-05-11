@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:id="@+id/tv_top_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017／08"
+        android:textSize="@dimen/text_big"
+        android:paddingLeft="@dimen/back_gauge_big"
+        android:paddingTop="@dimen/back_gauge_standard"
+        android:paddingBottom="@dimen/back_gauge_standard"
+        android:background="@color/white_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color" />
+
+</LinearLayout>

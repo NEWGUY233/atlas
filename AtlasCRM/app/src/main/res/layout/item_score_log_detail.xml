@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会议室预定"
+                android:textColor="#FF2B3039"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-01-18 09:30"
+                android:textColor="#FF939393"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 3000"
+            android:textColor="#FFF57754"
+            android:textSize="16sp"
+            />
+
+        
+    </LinearLayout>
+
+    <View
+        android:layout_alignBottom="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFF4F4F4"
+        />
+
+</RelativeLayout>

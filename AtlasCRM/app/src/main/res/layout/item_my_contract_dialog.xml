@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/back_gauge_huge">
+
+
+    <TextView
+        android:id="@+id/tv_contract_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/back_gauge_small"
+        android:layout_marginLeft="@dimen/back_gauge_big"
+        android:layout_marginTop="@dimen/back_gauge_large"
+        android:text=""
+         />
+
+
+    <TextView
+        android:id="@+id/tv_contract_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/back_gauge_big"
+        android:layout_marginRight="15dp"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@color/text_light_gray" />
+
+
+    <View
+        style="@style/devide_line"
+        android:layout_marginTop="@dimen/back_gauge_large" />
+
+
+</LinearLayout>

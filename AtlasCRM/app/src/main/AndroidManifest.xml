@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.atlas.crmapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Required -->
+    <permission
+        android:name="com.atlas.crmapp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required -->
+    <uses-permission android:name="com.atlas.crmapp.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".Atlas"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+            <!-- MTA可视化启动连接接口  ${MTA_SCHEME} -->
+            <intent-filter>
+                <data android:scheme="${MTA_SCHEME}" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!--用于安装来源分析-->
+            <intent-filter>
+                <data android:scheme="atlasApp" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyRightsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyOpinionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MySettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.MeetingRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.MeetingDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.SelectMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.MyMeetingCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.ServiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.CouponListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecosphere.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecosphere.ParticipantsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coffee.CoffeeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coffee.CoffeeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coffee.CoffeeShopActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name=".coffee.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".coffee.OrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecosphere.TopicDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ecosphere.ActivitiesDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".usercenter.CouponCenterActivity" />
+        <activity
+            android:name=".usercenter.MyExpenseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiscoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.RentWorkPlaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.RentWorkPlaceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.CorporationBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.CorporationBillMonthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.PayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".usercenter.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.NickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.CompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.MeetingRoomAppointmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.UpdateService" />
+
+        <receiver android:name=".WxRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".usercenter.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.RechargeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecosphere.EcoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fitness.AppointmentClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fitness.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fitness.AllCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fitness.PersonalCoachActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.CorporationCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.CorporationMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.SexSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58f2f9f4c8957673c5001df8" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <!--
+            <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.atlas.crmapp"/>
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.atlas.crmapp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.atlas.crmapp" />
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.atlas.crmapp" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required since 3.0.7 -->
+        <!-- 新的tag/alias接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 该广播需要继承JPush提供的JPushMessageReceiver类, 并如下新增一个 Intent-Filter -->
+        <!--
+            <receiver
+            android:name="com.atlas.crmapp.push.MyPushMessageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.atlas.crmapp" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".push.MyPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.atlas.crmapp" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="e26942f5ffa76e76c3d7dfad" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!--
+        在百度开发者中心查询应用的API Key
+        <meta-data
+            android:name="api_key"
+            android:value="BCEChbw4gKNFDmljApwCFqtv" />
+        -->
+        <activity
+            android:name=".coffee.CouponSuccessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTransparentActivity" />
+        <activity
+            android:name=".commonactivity.CouponDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.OrderPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTransparentActivity" />
+        <activity
+            android:name=".commonactivity.BlueToothAcitvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTransparentActivity" />
+        <!--
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        -->
+        <activity
+            android:name=".usercenter.CorporationInfoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.EditInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.PaySecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyCodeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 高德地图API KEY -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b3ebcf3f846e2e08209db0d2a8e229c1" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".usercenter.EditMobileActivity" />
+        <activity android:name=".commonactivity.PhotoViewActivity" />
+
+        <!-- 腾讯云 -->
+        <!-- 【必须】消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="true"
+            android:process=":QALSERVICE" >
+        </service>
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" >
+        </service>
+
+        <!-- 【必须】 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter" android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+
+            <!-- ImSDK 3.0.2 后添加 -->
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.service.TASK_REMOVED" />
+            </intent-filter>
+        </receiver>
+        <!-- 腾讯云end -->
+        <!-- 环信 -->
+
+        <activity
+            android:name=".huanxin.CallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" />
+        <activity
+            android:name=".huanxin.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".huanxin.VoiceCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" />
+        <activity
+            android:name=".huanxin.ContextMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name=".huanxin.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".huanxin.GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name=".huanxin.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".huanxin.GroupSearchMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".huanxin.PickAtUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name=".huanxin.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name=".huanxin.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".huanxin.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name=".huanxin.ContentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".coffee.JcVideoPlayerAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.atlas.crmapp.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <!-- MID3.5(mid-sdk-3.5.jar) 以上版本请务必增加此配置-->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.atlas.crmapp.TENCENT.MID.V3"
+            android:exported="true"></provider>
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="${MTA_APPKEY}" />
+        <!-- 请将value改为app发布对应的渠道，不同的发布渠道使用不同的名字 < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="${MTA_CHANNEL}" />
+        <!-- 注意：若填写的渠道为纯数字字符串类型，请不要超过int表示的范围！ < -->
+
+        <!-- 设置环信应用的appkey -->
+        <!--
+        prod
+        meta-data
+        android:name="EASEMOB_APPKEY"
+        android:value="1139170310115917#atlasprod" /
+        -->
+
+
+        <!--此处跟activity同级，需要放在Application内，AppKey替换为后台的”App Key”值 -->
+        <meta-data android:name="MW_APPID" android:value="P6V5CNKV3X27UD37JTGXC15HDQ971652" />
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="${EASEMOB_APPKEY}" />
+        <service android:name="cn.com.reformer.rfBleService.BleService" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"
+            tools:ignore="ExportedService" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".coffee.PaySucceedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.UserCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.GNavMapActivity"
+            android:label="@string/title_activity_amap"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".usercenter.ChangeCityCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.FreePswAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fitness.PersonalCoachDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.DoorLockCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.DoorLockCollectEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commonactivity.SelectDoorLockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecosphere.ActivitiesApplyEnterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.MyActivitiesAppointmentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.ActivitiesVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.VisitInviteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.SelectVisitCenterActivity"
+            android:label="@string/title_activity_select_visit_center"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".workplace.VisitInviteRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.ToVisitInviteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workplace.AddedValueServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".usercenter.MyScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.MyScoreLogDetailActivty"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.MyScoreGetActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.MyCompany_Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.MyPrintActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.CorporationMoneyActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.HabitActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.SkillActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.IndustryActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.JobActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.EmailActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".PrintDetailActivity"  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.index.IndexActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.index.fragment.index.activity.IndexTopAllActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.IndexPostNewsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.ActiveAndTagActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.TagCentreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.TagDetailActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.IndexDynamicDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".register.RegInfoActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity android:name=".register.RecordLoginActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.livingspace.LivingAllActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".selector.views.FoldersActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".selector.views.ImageSelectorActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.index.activity.PreviewPhotosActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".usercenter.MyDynamicActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.communication.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.index.fragment.communication.ContactActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.communication.AddFriendsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.livingspace.LivingNoneActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".usercenter.SettingLanguageActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".activity.index.fragment.communication.ChatDynamicActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.index.fragment.communication.ChatNoticeActivity"  android:screenOrientation="portrait"/>
+
+        <service android:name=".service.PrintService">
+            <intent-filter>
+                <action android:name="com.atla.crmapp.print"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

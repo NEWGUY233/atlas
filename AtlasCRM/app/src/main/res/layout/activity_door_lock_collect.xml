@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_collect_door"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/item_hight" />
+
+    <RelativeLayout
+        android:id="@+id/rl_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_door_lock_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="@dimen/back_gauge_huge"
+            android:src="@drawable/door_lock_null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_door_lock_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:text="@string/no_door"
+            android:textColor="@color/gray_simple" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btn_yellow"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/text_big">
+
+    </TextView>
+
+</RelativeLayout>

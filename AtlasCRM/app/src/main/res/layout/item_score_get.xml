@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="13dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="13dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/icon_integral_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv"
+                android:layout_toEndOf="@+id/iv"
+                android:layout_toRightOf="@+id/iv"
+                android:text="寰图拿铁超级无敌宇宙祖强固划算兑换券(combo)"
+                android:textColor="#FF2B3039"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_below="@id/tv_title"
+                android:layout_toRightOf="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_score_18"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:text="3500"
+                    android:textColor="#FFF57754"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:background="@drawable/bg_yellow_score"
+                    android:layout_width="76dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:id="@+id/tv_get"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="middle"
+                        android:layout_height="30dp"
+                        android:text="@string/user_score_trans"
+                        android:textColor="#FF2B3039"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/iv_arrow_"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/exchange_btn_arrowright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFF6F6F6"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="3dp"
+                    android:layout_height="22dp"
+                    android:background="#FFFED505"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_rules"
+                    android:textColor="#FF2B3039"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_rules"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="6dp"
+                android:textColor="#FF939393"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:scaleType="centerInside"
+            android:src="@drawable/arr_down"
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

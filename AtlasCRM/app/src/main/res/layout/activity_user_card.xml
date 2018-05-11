@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atlas.crmapp.usercenter.UserCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:id="@+id/v_dark_span"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/bg_person_card" />
+
+            <View
+                android:id="@+id/v_white_span"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/v_dark_span"
+                android:background="@color/white_color" />
+
+            <ImageView
+                android:id="@+id/ibBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                android:padding="@dimen/back_gauge_big"
+                android:src="@drawable/white_back_transparent" />
+
+            <TextView
+                android:id="@+id/tv_user_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ibBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/back_gauge_standard"
+                android:text="@string/private_card"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.atlas.crmapp.widget.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/back_gauge_small"
+                    android:src="@drawable/header_icon" />
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/back_gauge_standard"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/back_gauge_small"
+                        android:src="@drawable/male" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/back_gauge_standard"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:layout_below="@+id/v_white_span"
+                android:layout_marginTop="12dp"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/back_gauge_big"
+                android:paddingRight="@dimen/back_gauge_big">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/company"
+                    android:textSize="@dimen/text_big" />
+
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/back_gauge_big"
+                    android:textColor="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_trainer_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_user_info"
+                android:layout_marginTop="12dp"
+                android:background="@color/white_color"
+                android:paddingTop="@dimen/back_gauge_large"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tv_trainer_qualification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/back_gauge_big"
+                    android:text="@string/coach_zz"
+                    android:textSize="@dimen/text_big" />
+
+
+                <TextView
+                    android:id="@+id/tv_trainer_qualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_trainer_qualification_title"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/back_gauge_big"
+                    android:layout_marginRight="@dimen/back_gauge_big"
+                    android:layout_toRightOf="@id/tv_trainer_qualification_title"
+                    android:text="hello"
+                    android:textColor="@color/gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_trainer_qualification"
+                    android:layout_marginLeft="@dimen/back_gauge_big"
+                    android:layout_marginRight="@dimen/back_gauge_large"
+                    android:layout_marginTop="@dimen/back_gauge_large"
+                    android:background="@color/divider_gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item_trainer_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_trainer_qualification"
+                android:background="@color/white_color"
+                android:minHeight="65dp"
+                android:paddingLeft="@dimen/back_gauge_big"
+                android:paddingRight="@dimen/back_gauge_big"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tv_trainer_intro_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/coach_jj"
+                    android:textSize="@dimen/text_big" />
+
+
+                <TextView
+                    android:id="@+id/tv_trainer_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/back_gauge_big"
+                    android:layout_toRightOf="@id/tv_trainer_intro_title"
+                    android:lineSpacingExtra="4sp"
+                    android:text="hello\nhello"
+                    android:textColor="@color/gray" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_below="@id/item_trainer_intro"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0"
+                android:text="@string/add_friends"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_trainer_intro"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    style="@style/SubmitButton"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/agreed" />
+
+                <Button
+
+                    android:id="@+id/btn_refuse"
+                    style="@style/SubmitButton"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_gray"
+                    android:text="@string/refuse" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

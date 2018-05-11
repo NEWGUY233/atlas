@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:paddingTop="14dp"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:hint="@string/share_text"
+        android:textColorHint="#FF939393"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:maxLength="140"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="116dp" />
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:background="@color/white_color"
+        android:paddingRight="16dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/140"
+        android:textColor="#FF939393"
+        android:textSize="12sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:id="@+id/recyclerView"
+        android:background="@color/white_color"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="14dp"
+        android:src="@mipmap/icon_publish_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

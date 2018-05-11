@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.atlas.crmapp.commonactivity.WelcomeActivity">
+
+    <ViewStub
+        android:id="@+id/vs_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout="@layout/view_stub_welcome" />
+
+    <Button
+        android:id="@+id/btnNav"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_left_right_circle_yellow"
+        android:text="@string/welcome_atlas"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:layout_margin="@dimen/back_gauge_big"
+        android:padding="@dimen/back_gauge_big"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_large" />
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/back_gauge_big_huge"
+            android:paddingBottom="30dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

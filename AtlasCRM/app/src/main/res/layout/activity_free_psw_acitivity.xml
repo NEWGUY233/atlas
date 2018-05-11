@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.usercenter.FreePswAcitivity">
+
+    <LinearLayout
+        android:id="@+id/item_set_free_pws"
+        style="@style/item_standard_huge_left_right"
+        android:layout_marginTop="@dimen/back_gauge_standard">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_free_pws" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/free_pws_pay" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_free_pws_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_discount_name"
+            android:layout_alignBottom="@+id/tv_discount_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_free_pay_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/back_gauge_small"
+            android:layout_marginLeft="@dimen/back_gauge_big_huge"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:text="@string/free_price_num"
+            android:textColor="@color/gray_simple" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_free_pay_0"
+            style="@style/FreePayNum"
+            android:tag="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/each_0" />
+
+            <ImageView
+                android:id="@+id/iv_free_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sex_selected" />
+
+            <View
+                style="@style/devide_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_free_pay_50"
+            style="@style/FreePayNum"
+            android:tag="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/each_50" />
+
+            <ImageView
+                android:id="@+id/iv_free_50"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sex_not_select" />
+
+            <View
+                style="@style/devide_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_free_pay_100"
+            style="@style/FreePayNum"
+            android:tag="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/each_100" />
+
+            <ImageView
+                android:id="@+id/iv_free_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sex_not_select" />
+
+            <View
+                style="@style/devide_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_free_pay_200"
+            style="@style/FreePayNum"
+            android:tag="200">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/each_200" />
+
+            <ImageView
+                android:id="@+id/iv_free_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sex_not_select" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

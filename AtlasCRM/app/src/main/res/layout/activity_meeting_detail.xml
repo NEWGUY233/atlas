@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    tools:context="com.atlas.crmapp.workplace.MeetingDetailActivity">
+
+
+    <com.atlas.crmapp.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_meeting_room_name"
+                    android:drawablePadding="12dp"
+                    android:text="@string/meeting_room_name"
+                    android:textColor="@color/primary_text_drak"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_simple"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_big"
+                android:background="@color/white_color"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_meeting_room_num"
+                    android:drawablePadding="12dp"
+                    android:text="@string/meeting_room_num"
+                    android:textColor="@color/primary_text_drak"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_m_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/gray_simple"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginLeft="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_people_num"
+                    android:drawablePadding="12dp"
+                    android:text="@string/meeting_room_person"
+                    android:textColor="@color/primary_text_drak"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_capacity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/gray_simple"
+                    android:text=""
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginLeft="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_unit_price"
+                    android:drawablePadding="12dp"
+                    android:text="@string/meeting_room_price"
+                    android:textColor="@color/primary_text_drak"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/gray_simple"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginLeft="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_shebei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_equipment"
+                    android:drawablePadding="12dp"
+                    android:text="设备"
+                    android:textColor="@color/primary_text_drak"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_shebei"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/eq_tv_projection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@+id/eq_tv_white_board"
+                    android:drawableLeft="@drawable/ic_projection"
+                    android:drawablePadding="4dp"
+                    android:text="投影仪"
+                    android:visibility="gone"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/eq_tv_white_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@+id/eq_tv_laser"
+                    android:drawablePadding="4dp"
+                    android:text="白板"
+                    android:visibility="gone"
+                    android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_shebei"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/eq_tv_laser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="4dp"
+                        android:text="激光笔"
+                        android:visibility="gone"
+                        android:layout_marginRight="16dp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/eq_tv_vga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/eq_tv_projection"
+                        android:layout_below="@id/eq_tv_projection"
+                        android:drawablePadding="4dp"
+                        android:layout_marginRight="16dp"
+                        android:text="VGA切换器"
+                        android:visibility="gone"
+                        android:textSize="14sp" />
+                    </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/DividerHorizontal"
+                android:layout_marginLeft="12dp" />
+
+            <include
+                layout="@layout/view_wp_timeline"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                 />
+
+        </LinearLayout>
+
+    </com.atlas.crmapp.widget.MyScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+        <Button
+            android:id="@+id/btn_booking"
+            android:text="@string/meeting_room_book"
+            style="@style/SubmitButton"/>
+    </LinearLayout>
+</LinearLayout>

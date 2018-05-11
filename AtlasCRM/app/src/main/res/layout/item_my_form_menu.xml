@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_gauge_big"
+        android:background="@color/bg_gray"
+        android:visibility="gone" />
+
+    <LinearLayout style="@style/item_standard_white">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/phone_number"
+            android:textColor="#202020"
+            android:textSize="@dimen/text_standard" />
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_standard"
+            android:gravity="right"
+            android:text="@string/text_5"
+            android:visibility="visible" />
+
+
+        <com.atlas.crmapp.widget.CircleImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:layout_marginBottom="@dimen/back_gauge_standard"
+            android:src="@drawable/header_icon"
+            />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/arrow_hight"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/ic_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_recycler"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/empty"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@mipmap/pic_nofriendcoming"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="56dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="98dp"
+            android:layout_height="20dp"
+            android:text="@string/no_friends"
+            android:textColor="#FFCCCCCC"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

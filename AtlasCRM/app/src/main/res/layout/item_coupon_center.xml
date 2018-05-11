@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/back_gauge_standard"
+        android:paddingTop="@dimen/back_gauge_small"
+        android:paddingBottom="@dimen/back_gauge_small"
+        android:background="@color/white_color">
+
+        <ImageView
+            android:id="@+id/coupon_center_pictrue"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_gauge_standard"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_product_thum" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_coupon_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <com.atlas.crmapp.widget.ArcProgress
+                    android:id="@+id/coupon_center_arcprogress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    app:arc_angle="270"
+                    app:arc_custom_text="已抢"
+                    app:arc_custom_text_color="#000"
+                    app:arc_custom_text_show="true"
+                    app:arc_custom_text_size="12sp"
+                    app:arc_finished_color="@color/theme_yellow"
+                    app:arc_progress_suffix_text="%"
+                    app:arc_progress_suffix_text_color="#000"
+                    app:arc_progress_suffix_text_size="16sp"
+                    app:arc_progress_text_color="#000"
+                    app:arc_progress_text_size="12sp"
+                    app:arc_unfinished_color="@color/bottom_nav"
+                    app:decimal_digits="0" />
+
+                <TextView
+                    android:id="@+id/take_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/back_gauge_small"
+                    android:background="@drawable/coupon_center_bg"
+                    android:gravity="center"
+                    android:text="立即领取"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/time_line_gray"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_coupon_bg_ok" />
+            </FrameLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/back_gauge_small"
+            android:layout_marginTop="@dimen/back_gauge_small"
+            android:layout_marginLeft="@dimen/back_gauge_standard"
+            android:layout_marginRight="@dimen/back_gauge_small"
+            android:layout_toLeftOf="@id/relativelayout"
+            android:layout_toRightOf="@id/coupon_center_pictrue"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/coupon_center_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/back_gauge_big"
+                android:layout_marginTop="-2dp"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="2"
+                android:text="寰图咖啡 兑换券一份寰图咖啡 兑换券一份寰图咖啡 兑换券一份寰图咖啡 兑换券一份"
+                android:textColor="@color/background_color_black"
+                android:textSize="@dimen/text_standard" />
+
+            <TextView
+                android:id="@+id/valid_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_small"
+                android:text="2017.03.20-2017.03.30"
+                android:textColor="@color/gray_simple"
+                android:textSize="@dimen/text_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/coupon_center_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="￥50 "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/coupon_center_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_gauge_small"
+                    android:gravity="bottom"
+                    android:text="满80可用"
+                    android:textColor="@color/gray_simple"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

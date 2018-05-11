@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:id="@+id/iv_user_1"
+        style="@style/ActivitesUser"
+        android:layout_marginLeft="0dp" />
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:id="@+id/iv_user_2"
+
+        style="@style/ActivitesUser" />
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:id="@+id/iv_user_3"
+
+        style="@style/ActivitesUser" />
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:id="@+id/iv_user_4"
+
+        style="@style/ActivitesUser" />
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:id="@+id/iv_user_5"
+        style="@style/ActivitesUser"
+
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_6"
+        style="@style/ActivitesUser"
+        android:layout_marginRight="0dp"
+        android:visibility="invisible">
+
+        <com.atlas.crmapp.widget.CircleImageView
+            android:id="@+id/iv_user_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--<com.atlas.crmapp.widget.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4f000000"
+             />-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/back_gauge_big"
+            android:layout_marginBottom="@dimen/back_gauge_big"
+            android:background="@drawable/circle_popup_bg" />
+
+        <TextView
+            android:id="@+id/tv_user_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="6+"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_large" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.coffee.CoffeeDetailActivity">
+
+    <!-- Title bar layout -->
+
+    <com.atlas.crmapp.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.atlas.crmapp.view.ViewPagerIndicatorInsideView
+                android:id="@+id/vp_coffee_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.atlas.crmapp.view.ViewPagerIndicatorInsideView>
+
+            <com.atlas.crmapp.view.ProductInfoView
+                android:id="@+id/v_product_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_big"
+                android:layout_marginRight="@dimen/back_gauge_big"
+                android:layout_marginTop="@dimen/back_gauge_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_big"
+                android:background="@color/bg_gray" />
+
+            <com.atlas.crmapp.view.ProductIntroduceView
+                android:id="@+id/v_produt_inroduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.atlas.crmapp.widget.MyScrollView>
+    <!--下期-->
+
+    <RelativeLayout
+        android:id="@+id/rl_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white_color">
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            style="@style/SubmitButton"
+            android:text="@string/add_to_shopping_car"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/vs_dot_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/red" />
+    </RelativeLayout>
+
+
+</LinearLayout>

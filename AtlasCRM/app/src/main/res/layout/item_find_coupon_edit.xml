@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="8dp"
+    >
+
+
+    <!--<yyydjk.com.library.CouponView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="5"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white_color"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--android:paddingRight="4dp"-->
+        <!--app:cv_is_dash_line_right="false"-->
+        <!--app:cv_is_semicircle_bottom="false"-->
+        <!--app:cv_is_semicircle_left="true"-->
+        <!--app:cv_is_semicircle_right="false"-->
+        <!--app:cv_is_semicircle_top="false"-->
+        <!--app:cv_semicircle_color="@color/theme_bg_color"-->
+        <!--app:cv_semicircle_gap="6dp"-->
+        <!--app:cv_semicircle_radius="3dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:background="@color/white_color"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:src="@drawable/ic_coffee_white"-->
+                <!--android:padding="8dp"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="4dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_coupon_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="寰图咖啡通用兑换券一份"-->
+                    <!--android:textColor="@color/primary_text_drak"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_expired_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/tv_coupon_name"-->
+                    <!--android:text="2017.03.09-2017.03.23"-->
+                    <!--android:textColor="@color/secondary_text_drak"-->
+                    <!--android:textSize="10sp"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_coupon_price"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/tv_expired_date"-->
+                    <!--android:text="￥30"-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="18sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_coupon_attached"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignBottom="@id/tv_coupon_price"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_toRightOf="@id/tv_coupon_price"-->
+                    <!--android:text="满199可用"-->
+                    <!--android:textColor="@color/secondary_text_drak"-->
+                    <!--android:textSize="12sp"/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</yyydjk.com.library.CouponView>-->
+
+
+    <!--<com.dcn.atlas.widget.CouponImageView-->
+        <!--android:id="@+id/cv_right_img"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1.5"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:paddingRight="8dp"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:src="@drawable/ic_stamp_received"-->
+        <!--android:background="@color/time_line_gray"-->
+        <!--android:scaleType="centerInside"-->
+        <!--app:cv_dash_line_color="#C8C8C8"-->
+        <!--app:cv_dash_line_gap="2dp"-->
+        <!--app:cv_dash_line_height="1dp"-->
+        <!--app:cv_dash_line_length="5dp"-->
+        <!--app:cv_dash_line_margin_left="0dp"-->
+        <!--app:cv_is_dash_line_bottom="false"-->
+        <!--app:cv_is_semicircle_bottom="false"-->
+        <!--app:cv_is_dash_line_left="true"-->
+        <!--app:cv_is_semicircle_left="false"-->
+        <!--app:cv_is_dash_line_right="false"-->
+        <!--app:cv_is_semicircle_right="true"-->
+        <!--app:cv_is_dash_line_top="false"-->
+        <!--app:cv_is_semicircle_top="false"-->
+        <!--app:cv_semicircle_color="@color/theme_bg_color"-->
+        <!--app:cv_semicircle_gap="5dp"-->
+        <!--app:cv_semicircle_radius="3dp"/>-->
+
+</LinearLayout>

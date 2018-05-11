@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tv_corporation_rights"
+        style="@style/MenuItem"
+        android:background="@null">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_corporation_rights" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/c_qy" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:id="@+id/tv_corporation_bill"
+        style="@style/MenuItem"
+        android:background="@null">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_corporation_bill" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/company_bill" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:id="@+id/tv_corporation_person"
+        style="@style/MenuItem"
+        android:background="@null">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_corporation_person" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/c_yg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:id="@+id/tv_corporation_info_edit"
+        style="@style/MenuItem">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_corporation_edit" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/c_zl" />
+    </LinearLayout>
+
+</LinearLayout>

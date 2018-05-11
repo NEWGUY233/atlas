@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white_color">
+    <TextView
+        android:id="@+id/tv_input_contat_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/text_big"
+        android:layout_marginTop="@dimen/back_gauge_big"
+        android:text="@string/input_contact_info" />
+
+
+    <View
+        android:id="@+id/v_line_1"
+        style="@style/devide_line"
+        android:layout_below="@id/tv_input_contat_info"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/back_gauge_large" />
+
+
+    <TextView
+        android:id="@+id/contact"
+        style="@style/activities_text_enter"
+        android:layout_below="@id/v_line_1"
+        android:layout_marginLeft="20dp"
+        android:text="@string/contact" />
+
+
+    <EditText
+        android:id="@+id/et_contact"
+        style="@style/activities_edit_enter"
+        android:layout_alignTop="@id/contact"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@id/contact"
+        android:hint="@string/please_input_name"
+        android:maxLength="20" />
+
+    <View
+        android:id="@+id/v_line_2"
+        style="@style/devide_line"
+        android:layout_alignLeft="@id/et_contact"
+        android:layout_below="@id/et_contact" />
+
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        style="@style/activities_text_enter"
+        android:layout_alignLeft="@id/contact"
+        android:layout_below="@id/v_line_2"
+        android:text="@string/mobile_code" />
+
+
+    <EditText
+        android:id="@+id/et_moblie"
+        style="@style/activities_edit_enter"
+        android:layout_alignLeft="@id/v_line_2"
+        android:layout_alignTop="@id/tv_mobile"
+        android:inputType="number"
+        android:layout_toRightOf="@id/tv_mobile"
+        android:maxLength="11" />
+
+
+    <View
+        android:id="@+id/v_line_3"
+        style="@style/devide_line"
+        android:layout_alignLeft="@id/et_moblie"
+        android:layout_below="@id/et_moblie" />
+
+
+    <TextView
+        android:id="@+id/tv_wx"
+        style="@style/activities_text_enter"
+        android:layout_alignLeft="@id/contact"
+        android:layout_below="@id/v_line_3"
+        android:text="@string/wx_code" />
+
+
+    <EditText
+        android:id="@+id/et_wx"
+        style="@style/activities_edit_enter"
+        android:layout_alignLeft="@id/v_line_2"
+        android:layout_alignTop="@id/tv_wx"
+        android:layout_toRightOf="@id/tv_wx"
+        android:hint="@string/please_input_wx"
+        android:inputType="number|text"
+        android:maxLength="20" />
+
+
+    <View
+        android:id="@+id/v_line_4"
+        style="@style/devide_line"
+        android:layout_alignLeft="@id/et_wx"
+        android:layout_below="@id/et_wx" />
+
+
+    <TextView
+        android:id="@+id/tv_remark"
+        style="@style/activities_text_enter"
+        android:layout_alignLeft="@id/contact"
+        android:layout_below="@id/v_line_4"
+        android:text="@string/remark" />
+
+    <EditText
+        android:id="@+id/et_remark"
+        style="@style/activities_edit_enter"
+        android:layout_alignLeft="@id/v_line_2"
+        android:layout_alignTop="@id/tv_remark"
+        android:layout_toRightOf="@id/tv_remark"
+        android:ellipsize="end"
+        android:hint="@string/please_input_remark"
+        android:maxLines="2" />
+
+
+    <View
+        android:id="@+id/v_line_5"
+        style="@style/devide_line"
+        android:layout_alignLeft="@id/et_remark"
+        android:layout_below="@id/et_remark"
+        android:layout_marginBottom="30dp" />
+
+
+
+
+</RelativeLayout>

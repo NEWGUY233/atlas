@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/back_gauge_big"
+    android:paddingRight="@dimen/back_gauge_big">
+
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/back_gauge_small"
+        android:layout_marginRight="@dimen/back_gauge_big"
+        android:padding="@dimen/back_gauge_standard"
+        android:src="@drawable/door_lock_delete" />
+
+
+    <TextView
+        android:id="@+id/tv_door_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/back_gauge_small"
+        android:layout_toRightOf="@id/iv_delete"
+        android:text="30-B16"
+        android:textSize="@dimen/text_big" />
+
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/back_gauge_small"
+        android:src="@drawable/door_lock_menu" />
+
+    <View
+        style="@style/devide_line"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

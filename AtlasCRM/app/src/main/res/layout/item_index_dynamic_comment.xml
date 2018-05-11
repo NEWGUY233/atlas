@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+    
+    <com.atlas.crmapp.widget.CircleImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="18dp"
+        android:id="@+id/iv_icon"
+        android:src="@mipmap/icon_informationheard"
+        android:layout_marginRight="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周润发"
+                android:textColor="#FF4A90E2"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:ellipsize="middle"
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="· 公司尚未填写"
+                android:textColor="#FF4A90E2"
+                android:textSize="13sp"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/tips_icon_offical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="既然是猜测就会不确。但这并不意味着冷读就失败了。冷读并不是让你完全猜准对方的信息，而是通过这种方式让对方敞开心扉，主动的给你更多的信息。"
+            android:textColor="#FF2B3039"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/icon_like_unsel"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/tv_num_like"
+            android:layout_marginLeft="17dp"
+            android:background="@color/white_color"
+            android:layout_marginRight="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#FF2B3039"
+            android:textSize="10sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

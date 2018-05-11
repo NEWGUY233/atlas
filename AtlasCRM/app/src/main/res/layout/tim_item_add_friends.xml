@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69dp">
+
+    <com.atlas.crmapp.widget.CircleImageView
+        android:layout_marginLeft="17dp"
+        android:layout_centerVertical="true"
+        android:src="@color/bg_gray"
+        android:id="@+id/icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_reject"
+        android:layout_marginRight="26dp"
+        android:src="@mipmap/im_icon_rejectfriend"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="24dp" />
+
+    <ImageView
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@id/iv_reject"
+        android:id="@+id/iv_acp"
+        android:src="@mipmap/im_icon_addfriend_approve"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/iv_acp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon"
+        android:paddingLeft="7dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF262628"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_friends_"
+            android:textColor="#FF262628"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFF4F4F4"
+        />
+
+</RelativeLayout>

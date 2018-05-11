@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+
+    
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:minHeight="58dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/icon_talk_sound"
+            android:id="@+id/iv_voice"
+            android:layout_marginLeft="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@color/white_color"
+            android:hint="@string/input_txt"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="58dp"
+            android:maxHeight="150dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#FF2B3039"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/im_icon_talk_face"
+            android:id="@+id/iv_emo"
+            android:layout_marginLeft="16dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/im_icon_talk_plus"
+            android:id="@+id/iv_more"
+            android:layout_marginLeft="14dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_more"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:scaleType="center"
+            android:src="@mipmap/im_icon_talk_carmer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_img"
+            android:scaleType="center"
+            android:src="@mipmap/im_icon_talk_image"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_location"
+            android:scaleType="center"
+            android:src="@mipmap/im_icon_talk_address"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_voice"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/im_icon_talk_sound"
+            android:id="@+id/iv_input"
+            android:layout_marginLeft="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/tv_voice"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:background="@drawable/voice_pressed_false"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="19dp"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/input_voice"
+            android:textColor="#FFC2C4CA"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:paddingTop="10dp"
+        android:id="@+id/emoticonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@color/white_color">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

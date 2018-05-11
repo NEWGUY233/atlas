@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/back_gauge_big"
+                    android:layout_marginRight="@dimen/back_gauge_big">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/searching"
+                        android:textColor="@color/gray_simple"
+                        android:textSize="@dimen/text_big" />
+
+                    <ImageView
+                        android:id="@+id/iv_setting_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/back_gauge_standard"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/back_gauge_standard"
+                        android:src="@drawable/setting_collect" />
+
+                    <View
+                        style="@style/devide_line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rl_title">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/v_search"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="bluetooth_search.json"
+                        app:lottie_loop="true" />
+                    <!--bluetooth_search-->
+                    <ImageView
+                        android:id="@+id/iv_blue_open_fail"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp" />
+
+                    <TextView
+                        android:id="@+id/tv_search_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_blue_open_fail"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/back_gauge_standard"
+                        android:gravity="center"
+                        android:text="@string/search_fail_please_open_blue"
+                        android:textColor="@color/gray_simple"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_room_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rl_title"
+                    android:orientation="vertical">
+
+                    <com.liaoinstan.springview.widget.SpringView
+                        android:id="@+id/springview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <com.atlas.crmapp.view.MyRecyclerView
+                            android:id="@+id/rv_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never" />
+                    </com.liaoinstan.springview.widget.SpringView>
+
+                    <TextView
+                        android:id="@+id/tv_down_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/back_gauge_big"
+                        android:layout_marginTop="@dimen/back_gauge_small"
+                        android:text="@string/blue_down_refresh"
+                        android:textColor="@color/gray_simple"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/popup_bg"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_setting_mask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/back_gauge_huge"
+                        android:layout_marginTop="@dimen/back_gauge_big"
+                        android:src="@drawable/setting_collect_mask" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_setting_mask"
+                        android:layout_marginRight="@dimen/back_gauge_big"
+                        android:layout_toLeftOf="@id/iv_setting_mask"
+                        android:src="@drawable/door_lock_collect" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/back_gauge_big"
+            android:padding="@dimen/back_gauge_big"
+            android:src="@drawable/btn_close" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bottom_err_msg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_top_orange_circle"
+        android:gravity="center"
+        android:text="@string/ble_opent_error_msg"
+        android:textColor="@color/white_color"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

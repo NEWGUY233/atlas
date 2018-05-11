@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atlas.crmapp.workplace.MeetingRoomAppointmentActivity">
+
+
+    <com.atlas.crmapp.view.HeadZoomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_hight"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_banner"
+                style="@style/BigBannerImage"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_hight_big"
+                android:background="@color/white_color"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/back_gauge_big">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/back_gauge_big"
+                    android:layout_marginLeft="@dimen/back_gauge_standard"
+                    android:layout_marginRight="@dimen/back_gauge_big"
+                    android:layout_marginTop="@dimen/back_gauge_big">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_big" />
+
+                    <TextView
+                        android:id="@+id/tv_price_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_name"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/yuan_hour" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_price"
+                        android:layout_toLeftOf="@id/tv_price_unit"
+                        android:text="200"
+                        android:textSize="@dimen/text_big" />
+
+
+                    <TextView
+                        android:id="@+id/tv_person_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginBottom="@dimen/back_gauge_standard"
+                        android:layout_marginTop="@dimen/back_gauge_standard"
+                        android:text="@string/person_num" />
+
+                    <TextView
+                        android:id="@+id/tv_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_person_num"
+                        android:layout_toRightOf="@id/tv_person_num" />
+
+                    <TextView
+                        android:id="@+id/tv_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_person_num"
+                        android:text="@string/device" />
+
+                    <TextView
+                        android:id="@+id/tv_device_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_device"
+                        android:layout_toRightOf="@id/tv_device"
+                        android:maxWidth="250dp"
+                        android:text="" />
+
+
+                    <include
+                        layout="@layout/view_wp_timeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/tv_device_detail" />
+
+                    <TextView
+                        android:id="@+id/tv_price_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/tv_price_unit"
+                        android:layout_alignTop="@id/tv_person_num"
+                        android:text="@string/detail_price_table"
+                        android:textColor="@color/orange" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    style="@style/MeetingItem"
+                    android:layout_marginTop="-8dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/meeting_title"
+                        android:text="@string/meeting_name" />
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        style="@style/MeetingItemRight"
+                        android:background="@null"
+                        android:maxLength="50" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/DividerHorizontal" />
+
+
+                <RelativeLayout
+                    android:id="@+id/linearLayoutStart"
+                    style="@style/MeetingItem">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/meeting_start_time"
+                        android:drawableRight="@drawable/arr_down"
+                        android:text="@string/meeting_time" />
+
+                    <TextView
+                        android:id="@+id/tv_startdate"
+                        style="@style/MeetingItemRight"
+                        android:layout_width="wrap_content" />
+
+                    <ImageView style="@style/MeetingRoomAppointmentItem" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/DividerHorizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/linearLayoutEnd"
+                    style="@style/MeetingItem">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/meeting_end_time"
+                        android:drawableRight="@drawable/arr_down"
+                        android:text="@string/meeting_end" />
+
+                    <TextView
+                        android:id="@+id/tv_enddate"
+                        style="@style/MeetingItemRight"
+                        android:layout_width="wrap_content"
+                        android:text="" />
+
+                    <ImageView style="@style/MeetingRoomAppointmentItem" />
+
+                </RelativeLayout>
+
+                <View style="@style/DividerHorizontal" />
+
+                <RelativeLayout style="@style/MeetingItem">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/ic_people_num"
+                        android:drawablePadding="12dp"
+                        android:text="@string/meeting_person" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/tv_1"
+                        android:id="@+id/et_people"
+                        style="@style/MeetingItemRight"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <View style="@style/DividerHorizontal" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="@dimen/back_gauge_big">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/meeting_added_value"
+                        android:drawablePadding="12dp"
+                        android:text="@string/added_value" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/tv_2"
+                        android:id="@+id/tv_added_value"
+                        style="@style/MeetingItemRight"
+                        android:lineSpacingExtra="@dimen/line_spacing_extra"
+                        android:layout_marginRight="@dimen/back_gauge_huge" />
+
+                    <ImageView
+                        style="@style/MeetingRoomAppointmentItem"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View style="@style/DividerHorizontal" />
+
+                <RelativeLayout
+                    style="@style/MeetingItem"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/back_gauge_big"
+                    android:paddingTop="@dimen/back_gauge_big">
+
+                    <TextView
+                        android:id="@+id/tv_other"
+                        style="@style/MeetingItemLeft"
+                        android:drawableLeft="@drawable/meeting_other_request"
+                        android:text="@string/meeting_other" />
+
+                    <EditText
+                        android:id="@+id/et_require"
+                        style="@style/MeetingItemRight"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:maxLength="150" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.atlas.crmapp.view.HeadZoomScrollView>
+
+    <include layout="@layout/titlebar_tp" />
+
+
+    <Button
+        android:id="@+id/btn_booking"
+        style="@style/SubmitButtonNoRadius"
+        android:layout_alignParentBottom="true"
+        android:text="@string/meeting_book" />
+
+    <View
+        style="@style/DividerHorizontal"
+        android:layout_above="@id/btn_booking" />
+
+</RelativeLayout>

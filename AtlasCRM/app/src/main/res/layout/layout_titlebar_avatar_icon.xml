@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TitleBar">
+
+    <tangxiaolv.com.library.EffectiveShapeView
+        android:id="@+id/shape_avatar"
+        style="@style/SmallAvatar"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_user_qr_code"
+       />
+
+
+    <TextView
+        android:id="@+id/tb_tv_title"
+        style="@style/TitleBarTitle"
+        tools:text="Title"/>
+
+    <ImageView
+        android:id="@+id/tb_iv_right"
+        style="@style/TitleBarIcon"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_more"/>
+
+
+</RelativeLayout>

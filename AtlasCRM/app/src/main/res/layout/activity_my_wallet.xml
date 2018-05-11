@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    tools:context="com.atlas.crmapp.usercenter.MyWalletActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_my_wallet" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/background_color_black"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_wallet_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_balance"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/check_out"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_below="@id/v_line"
+        style="@style/SubmitButtonLeftRight"
+        android:layout_marginTop="80dp"
+        android:text="@string/check_add" />
+</RelativeLayout>

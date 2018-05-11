@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    tools:context="com.atlas.crmapp.usercenter.RechargeActivity">
+
+    <com.atlas.crmapp.view.ResizableImageView
+        android:id="@+id/iv_recharge_info"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:minHeight="@dimen/title_bar_tp_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/rechager_banner" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_recharge_info"
+        android:orientation="vertical"
+        android:padding="@dimen/back_gauge_big">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="@dimen/back_gauge_standard"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/back_gauge_standard"
+                android:layout_marginRight="@dimen/back_gauge_standard"
+
+                android:textColor="@color/gray_simple"
+                android:textSize="@dimen/text_big" />
+
+            <com.atlas.crmapp.view.MoneyEditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_yuan"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="8"
+                android:scrollbars="horizontal"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/gray_simple"
+                android:textCursorDrawable="@null"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_yuan"
+                android:layout_marginBottom="-4dp"
+                android:layout_alignLeft="@id/et_amount"
+                android:text="@string/please_input_pay_num"
+                android:textColor="@color/gray_simple"
+                android:textSize="@dimen/text_big" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_select_pay_channel"
+            android:textColor="@color/black" />
+
+        <com.atlas.crmapp.view.RechargePayChannelView
+            android:id="@+id/v_pay_ali"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight" />
+
+        <com.atlas.crmapp.view.RechargePayChannelView
+            android:id="@+id/v_pay_wx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_now_recharge"
+        style="@style/SubmitButtonLeftRight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/back_gauge_big"
+        android:layout_marginTop="40dp"
+        android:alpha="0.5"
+        android:text="@string/now_recharge" />
+
+    <include layout="@layout/titlebar_tp" />
+
+</RelativeLayout>

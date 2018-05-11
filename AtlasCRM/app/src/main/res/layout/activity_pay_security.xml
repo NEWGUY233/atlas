@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_set_pws"
+        android:paddingLeft="@dimen/back_gauge_large"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_paw_managers" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/set_pay_pws" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/devide_line"
+        android:layout_marginLeft="@dimen/back_gauge_big_huge" />
+
+
+    <LinearLayout
+        android:id="@+id/item_set_finger"
+        android:paddingLeft="@dimen/back_gauge_large"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_finger_pay" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/finger_pay" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_finger_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_discount_name"
+            android:layout_alignBottom="@+id/tv_discount_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/devide_line"
+        android:layout_marginLeft="@dimen/back_gauge_big_huge" />
+
+    <LinearLayout
+        android:id="@+id/item_set_free_pws"
+        android:paddingLeft="@dimen/back_gauge_large"
+        style="@style/item_standard_huge_left_right">
+
+        <ImageView
+            style="@style/UserCenterItemImageViewStyle"
+            android:src="@drawable/ic_free_pws" />
+
+        <TextView
+            style="@style/UserCenterItemTextViewStyle"
+            android:text="@string/free_pws_pay" />
+
+        <TextView
+            android:id="@+id/tv_is_opent_free_pay"
+            android:layout_width="wrap_content"
+            android:text="@string/open"
+            android:textColor="@color/gray_simple"
+            android:layout_marginRight="@dimen/back_gauge_standard"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            style="@style/UserCenterItemArrow"
+            android:src="@drawable/ic_user_arrow_right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

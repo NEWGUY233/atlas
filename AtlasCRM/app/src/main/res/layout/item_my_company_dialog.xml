@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/companyIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/back_gauge_standard"
+            />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/companyIcon"
+            android:textColor="@color/text_dark"
+            android:layout_alignTop="@id/companyIcon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="company name"
+            />
+        <TextView
+            android:id="@+id/companyIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="company intro"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_light_gray"
+            android:layout_alignBottom="@id/companyIcon"
+            android:layout_toRightOf="@id/companyIcon"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        />
+
+</LinearLayout>

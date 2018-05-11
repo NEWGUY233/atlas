@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mask_wp"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/status_bar_height"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/popup_margin_left_right"
+        android:layout_marginRight="@dimen/popup_margin_left_right"
+        android:background="@drawable/button_white">
+
+        <ImageView
+            android:id="@+id/iv_my_code"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:id="@+id/v_line"
+                style="@style/devide_line" />
+
+            <com.atlas.crmapp.widget.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/v_line"
+                android:layout_marginBottom="@dimen/back_gauge_big"
+                android:layout_marginLeft="@dimen/back_gauge_huge"
+                android:layout_marginRight="@dimen/back_gauge_large"
+                android:layout_marginTop="@dimen/back_gauge_big"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header_icon" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_avatar"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:layout_below="@id/tv_name"
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_to_add_friend"
+                android:layout_marginBottom="@dimen/back_gauge_standard"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textColor="@color/gray_simple" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

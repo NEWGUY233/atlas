@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <yyydjk.com.library.CouponView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/white_color"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:cv_is_dash_line_right="false"
+        app:cv_is_semicircle_bottom="false"
+        app:cv_is_semicircle_left="true"
+        app:cv_is_semicircle_right="false"
+        app:cv_is_semicircle_top="false"
+        app:cv_semicircle_color="@color/theme_bg_color"
+        app:cv_semicircle_gap="6dp"
+        app:cv_semicircle_radius="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="寰图咖啡通用兑换券一份"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/tv_expired_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_coupon_name"
+                    android:text="2017.03.09-2017.03.23"
+                    android:textColor="@color/gray_simple"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_expired_date"
+                    android:layout_toRightOf="@id/tv_unit"
+                    android:text="30"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_coupon_price"
+                    android:layout_below="@id/tv_expired_date"
+                    android:gravity="bottom"
+                    android:text="￥"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_small"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_coupon_price"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_coupon_price"
+                    android:maxLines="1"
+                    android:text="满199可用"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_small" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </yyydjk.com.library.CouponView>
+
+
+    <com.atlas.crmapp.widget.CouponImageView
+        android:id="@+id/cv_right_img"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1.2"
+        android:background="#FED731"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/iv_coupon_nottake"
+        app:cv_dash_line_color="#C8C8C8"
+        app:cv_dash_line_gap="2dp"
+        app:cv_dash_line_height="1dp"
+        app:cv_dash_line_length="5dp"
+        app:cv_dash_line_margin_bottom="0dp"
+        app:cv_dash_line_margin_left="0dp"
+        app:cv_dash_line_margin_top="0dp"
+        app:cv_is_dash_line_bottom="false"
+        app:cv_is_dash_line_left="false"
+        app:cv_is_dash_line_right="false"
+        app:cv_is_dash_line_top="false"
+        app:cv_is_semicircle_bottom="false"
+        app:cv_is_semicircle_left="false"
+        app:cv_is_semicircle_right="true"
+        app:cv_is_semicircle_top="false"
+        app:cv_semicircle_color="@color/theme_bg_color"
+        app:cv_semicircle_gap="5dp"
+        app:cv_semicircle_radius="3dp" />
+
+</LinearLayout>

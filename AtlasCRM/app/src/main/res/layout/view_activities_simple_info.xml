@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/back_gauge_big"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="@dimen/text_big" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:textColor="@color/gray_simple"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_remain_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_time"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_small" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/back_gauge_big"
+        android:textColor="@color/gray_simple"
+        android:textSize="@dimen/text_small" />
+
+
+</LinearLayout>

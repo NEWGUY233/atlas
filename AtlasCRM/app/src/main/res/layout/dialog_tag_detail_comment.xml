@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_white_circular"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/post_text_circle"
+        android:textColor="#FF2B3039"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:maxLength="140"
+        android:id="@+id/comment"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="#FFF4F4F4"
+        android:gravity="top"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:hint="@string/share_your_mind"
+        android:textColorHint="#FF939393"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:layout_marginTop="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0D000050"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textColor="#FF2B3039"
+            android:textSize="17sp"
+            />
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="43.5dp"
+            android:background="#0D000050"
+            />
+
+        <TextView
+            android:id="@+id/submit"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/index_news_submit"
+            android:textColor="#FF2B3039"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

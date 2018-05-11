@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会议室预定"
+                android:textColor="#FF2B3039"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-01-18 09:30"
+                android:textColor="#FF939393"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="- 3000"
+            android:textColor="#FF69BD45"
+            android:textSize="18sp"
+            />
+
+        
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFF4F4F4"
+        />
+
+</RelativeLayout>

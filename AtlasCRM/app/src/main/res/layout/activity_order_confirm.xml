@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.coffee.OrderConfirmActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/back_gauge_small"
+            android:layout_marginRight="@dimen/back_gauge_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/back_gauge_big"
+                    android:background="@color/bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/button_white_top_radius"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/back_gauge_large">
+
+                    <TextView
+                        android:id="@+id/tv_title_consignee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/order_id"
+                        android:textColor="@color/gray_simple" />
+
+                    <TextView
+                        android:id="@+id/tv_order_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/back_gauge_small"
+                        android:layout_toRightOf="@id/tv_title_consignee"
+                        android:text=""
+                        android:textColor="@color/gray_simple" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/back_gauge_small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/status_wait"
+                        android:textColor="@color/orange" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/devide_line"
+                    android:layout_marginLeft="@dimen/back_gauge_small"
+                    android:layout_marginRight="@dimen/back_gauge_small" />
+                <!-- 收货信息 -->
+                <!--<com.atlas.crmapp.view.ReceiveAddressView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.atlas.crmapp.view.ReceiveAddressView>-->
+
+
+                <!-- 订单信息 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/back_gauge_big_huge"
+                    android:layout_marginLeft="@dimen/back_gauge_large"
+                    android:layout_marginRight="@dimen/back_gauge_large"
+                    android:layout_marginTop="@dimen/back_gauge_large" />
+
+
+                <com.atlas.crmapp.view.OrderCouponAndBenefitView
+                    android:id="@+id/v_coupon_benefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_gauge_large"
+                    android:layout_marginRight="@dimen/back_gauge_large"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight_big"
+                    android:layout_marginLeft="@dimen/back_gauge_large"
+                    android:layout_marginRight="@dimen/back_gauge_large">
+
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_discount_money"
+                        android:layout_alignBottom="@+id/tv_discount_money"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/back_gauge_small"
+                        android:text="@string/order_yh"
+                        android:textColor="@color/gray_simple" />
+
+                    <TextView
+                        android:id="@+id/tv_discount_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/back_gauge_small"
+                        android:text=""
+                        android:textColor="@color/orange" />
+
+                    <View
+                        style="@style/DividerHorizontal"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_price_z"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="@dimen/back_gauge_big_huge"
+                        android:paddingBottom="@dimen/item_hight" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_price_z"
+                        android:background="@color/bg_gray">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/white_color" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/item_hight_big"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bg_order_confirm" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- 底栏 -->
+        <RelativeLayout
+            android:id="@+id/order_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_color">
+
+
+            <TextView
+                android:id="@+id/tv_zf"
+                style="@style/SubmitButtonNoRadius"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/to_account"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:id="@+id/ll_cb_contract_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/back_gauge_big_huge"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_qy"
+                    android:textColor="@color/gray_simple" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/cb_use_contract_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_gauge_standard" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

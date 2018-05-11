@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_index_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_food"
+                    android:textColor="#FF2B3039"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_fb"
+                    android:textColor="#FF939393"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/ll1"
+                android:id="@+id/recyclerView_food"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_marginBottom="21dp"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/recyclerView_food"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="64dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginLeft="16dp"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="1dp"
+                    android:layout_width="0dp"
+                    app:cardBackgroundColor="#ffff"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_kitchen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/livingspace_pic_kitchen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_food_kitchen"
+                            android:textColor="#FF2B3039"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_below="@id/tv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_food_kitchen_"
+                            android:textColor="#FF939393"
+                            android:textSize="8sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="4dp"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="1dp"
+                    android:layout_width="0dp"
+                    app:cardBackgroundColor="#ffff"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_coffee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/livingspace_pic_coffee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_food_coffe"
+                            android:textColor="#FF2B3039"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_below="@id/tv_2"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_food_coffe_"
+                            android:textColor="#FF939393"
+                            android:textSize="8sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_below="@id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#FFEEF1F3"
+                />
+
+            <LinearLayout
+                android:layout_below="@id/line1"
+                android:id="@+id/ll3"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_sport"
+                    android:textColor="#FF2B3039"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_sport_"
+                    android:textColor="#FF939393"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView_
+                android:background="@color/bg_gray"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/ll3"
+                android:visibility="visible"
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_marginBottom="21dp"
+                android:layout_marginTop="23dp"
+                android:layout_below="@id/viewpager"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="64dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginLeft="16dp"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="1dp"
+                    android:layout_width="0dp"
+                    app:cardBackgroundColor="#ffff"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fitness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/livingspace_pic_fitness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_3"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_sport_fitness"
+                            android:textColor="#FF2B3039"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_below="@id/tv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_sport_fitness_"
+                            android:textColor="#FF939393"
+                            android:textSize="8sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="4dp"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="1dp"
+                    android:layout_width="0dp"
+                    app:cardBackgroundColor="#ffff"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_golf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/livingspace_pic_golf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_sport_golf"
+                            android:textColor="#FF2B3039"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_below="@id/tv_4"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_living_space_sport_golf_"
+                            android:textColor="#FF939393"
+                            android:textSize="8sp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_below="@id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#FFEEF1F3"
+                />
+
+            <LinearLayout
+                android:layout_below="@id/line2"
+                android:id="@+id/ll5"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_studio"
+                    android:textColor="#FF2B3039"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_living_space_studio_"
+                    android:textColor="#FF939393"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/ll5"
+                android:id="@+id/recyclerView_studio"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            <View
+                android:id="@+id/line3"
+                android:layout_below="@id/recyclerView_studio"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="24dp"
+                android:background="#FFEEF1F3"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

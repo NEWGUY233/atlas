@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_coffer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/text_big" />
+
+    <TextView
+        android:id="@+id/tv_coffer_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/back_gauge_small"
+        android:ellipsize="end"
+        style="@style/PriceBold" />
+
+    <TextView
+        android:id="@+id/tv_coffer_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/back_gauge_big"
+        android:textColor="@color/gray_simple"
+        android:textSize="@dimen/text_standard" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/header_anim"
+        layout="@layout/view_refresh_header"
+        android:visibility="gone"
+        />
+    <com.atlas.crmapp.view.IndexTopViewpager
+        android:id="@+id/header_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.atlas.crmapp.view.IndexTopViewpager>
+</LinearLayout>

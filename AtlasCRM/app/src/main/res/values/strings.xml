@@ -1,0 +1,998 @@
+<resources>
+    <string name="app_name">ATLAS 寰图</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment!</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支s付结果：%s</string>
+    <string name="enter_change">确认更改</string>
+    <string name="set_pay_password">设置支付密码</string>
+    <string name="click_get">点击获取</string>
+    <string name="retry_send">重新发送</string>
+    <string name="click_retry_get">点击重新获取</string>
+    <string name="please_input_authc_code">请输入验证码</string>
+    <string name="please_input_pay_num"><font size="20">请输入您要充值的金额</font></string>
+    <string name="wx_pay">微信充值</string>
+    <string name="ali_pay">支付宝充值</string>
+    <string name="please_select_pay_channel">请选择支付方式</string>
+    <string name="submit">提交</string>
+    <string name="save">保存</string>
+    <string name="company">公司</string>
+    <string name="please_input_you_opinion">请输入您的宝贵意见</string>
+    <string name="activity_limt_person_and_cost"><Data><![CDATA[<font color="#bdbdbd">活动人数限制 </font><font color="#ff0000">%1$s</font><font color="#bdbdbd">~%2$s人，每人费用 </font><font color="#ff0000">￥%3$s</font>]]></Data></string>
+    <string name="reserve_room">预定会议室</string>
+    <string name="reserve_server">预约服务</string>
+    <string name="add_vip">加入会籍</string>
+    <string name="meeting_look">预约参观</string>
+
+    <string name="activity_recommend">活动推荐</string>
+    <string name="private_introducer">私教介绍</string>
+    <string name="reserve_course">预约课程</string>
+    <string name="reserve_experience">预约体验</string>
+    <string name="more">更多</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="is_quit_the_chat_room">是否退出聊天室</string>
+    <string name="messages_are_empty">聊天记录已被清空</string>
+
+    <string name="is_modify_the_group_description">正在修改群详情..</string>
+    <string name="Modify_the_group_name_successful">修改群名称成功</string>
+    <string name="Modify_the_group_description_successful">修改群详情成功</string>
+    <string name="change_the_group_description_failed_please">修改群详情失败，请检查网络或稍后重试</string>
+    <string name="change_the_group_description">改变群描述</string>
+    <string name="search_contanier">搜索："%s"</string>
+    <string name="have_connected_with">已经和对方建立连接</string>
+    <string name="no_call_data">没有通话数据</string>
+    <string name="network_unstable">网络不稳定</string>
+    <string name="call_version_inconsistent">通话协议版本不一致</string>
+
+    <string name="user_already_in_contactlist">此用户已是你好友(被拉黑状态)，从黑名单列表中移出即可</string>
+    <string name="refuse">拒绝</string>
+    <string name="invite_join_group">邀请加入群：</string>
+    <string name="accept_join_group">同意加入群：</string>
+    <string name="refuse_join_group">拒绝加入群：</string>
+    <string name="Are_agree_with">正在同意……</string>
+    <string name="Are_refuse_with">正在拒绝……</string>
+    <string name="Refuse_with_failure">拒绝失败:</string>
+
+
+    <string name="coffee">咖啡</string>
+    <string name="to_account">立即付款</string>
+    <string name="this_monent_recommend">本月推荐</string>
+
+    <string name="my_room">我的会议</string>
+    <string name="vip_product">会籍产品</string>
+    <string name="product_detail">产品详情</string>
+    <string name="product_introduce">产品介绍</string>
+
+    <string name="order_detail">订单详情</string>
+    <string name="enter_order">确认订单</string>
+    <string name="quick_pay">马上支付</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="need_pay_money">需支付: <font color="#ff8149">%1$s元</font></string>
+    <string name="real_pay_money">实际支付： <Data><![CDATA[<font size="5" ,color="#ff8149">%1$s元</font>]]></Data></string>
+    <string name="coupon">优惠券</string>
+    <string name="none_user_coupon">无可用优惠券</string>
+    <string name="have_user_coupon">有可用优惠券</string>
+
+    <string name="female">女</string>
+    <string name="male">男</string>
+
+    <string name="shopping_cart_null">购物车空空如也~</string>
+    <string name="select_shopping">请选择商品</string>
+    <string name="header_icon">头像</string>
+    <string name="no_user">不使用</string>
+    <string name="select_coupon">选择优惠券</string>
+    <string name="free_money">共折扣%1$s元，您还需支付</string>
+    <string name="free_money_">共优惠%1$s元</string>
+    <string name="limt_select_time_district">只能选择15天范围内的时间</string>
+
+    <string name="today_null_course">今天暂无课程</string>
+    <string name="limt_order_hour">最少只能预约一小时</string>
+    <string name="need_beyond_current_time">预约时间必须大于当前时间</string>
+    <string name="title_activity_amap">AMapActivity</string>
+    <string name="cancel_auth">取消授权</string>
+    <string name="set_auth">设为授权人</string>
+    <string name="owner">法人</string>
+    <string name="authorized">授权人</string>
+    <string name="corporation_preson">企业员工名单</string>
+    <string name="please_set_pws">请设置密码</string>
+    <string name="balance">余额：%1$s元</string>
+
+    <string name="recharge_record">充值记录</string>
+    <string name="lesson_introduce">课程介绍</string>
+    <string name="offlineCode">（台号：%1$s）</string>
+    <string name="to_be_bill">未出账单</string>
+    <string name="recharge_detail">余额明细</string>
+
+    <string name="guide_down">下拉进入业态详情</string>
+    <string name="guide_left_right">左右滑动更换业态</string>
+    <string name="know">我知道了</string>
+    <string name="not_more">已经全部加载完毕</string>
+    <string name="net_work_error">网络断开</string>
+    <string name="click_retry">请点击刷新</string>
+
+    <string name="free_user_min_and_remain_min">使用免费点数%1$s分钟，剩余%2$s分钟</string>
+    <string name="free_user_min">使用免费点数%1$s分钟</string>
+    <string name="free_user_min_">%1$s元打印抵扣金</string>
+    <string name="free_user_less_min_second">免费点数剩余%1$s分钟,小于最小计费单位,抵扣不可用</string>
+    <string name="pay_recharge_detail">充值详情</string>
+    <string name="complete_order">完成订单</string>
+    <string name="image_not_exist_retry_select">图片不存在，请重新选择</string>
+    <string name="please_open_permisstion_camera">请打开读写存储及相机权限</string>
+    <string name="please_open_permisstion_location">请打开定位权限</string>
+
+    <string name="you_is_not_vip">您不是会籍会员</string>
+    <string name="coup_and_benefit_not_used">优惠券与促销不能同时使用</string>
+    <string name="company_bill">企业账单</string>
+
+    <string name="my_appointment">我的预约</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_coupon">我的优惠券</string>
+
+    <string name="umeng_meeting_room_list">预约会议室列表</string>
+    <string name="umeng_meeting_room_detail">预约会议详情</string>
+    <string name="umeng_meeting_room_form">预约会议室表单</string>
+
+    <string name="umeng_lesson_list">预约课程列表</string>
+    <string name="umeng_lesson_detail">预约会议详情</string>
+
+    <string name="umeng_complete_order">完成订单</string>
+    <string name="umeng_fitness_order">健身课程订单</string>
+    <string name="umeng_metting_order">会议室订单</string>
+
+
+    <!--    #####-->
+    <string name="time">耗时:</string>
+    <string name="not_support">条件不满足，结束</string>
+    <string name="start">开始验证，请放置你的指纹</string>
+    <string name="succeed">验证通过，结束</string>
+    <string name="not_match">指纹不匹配，剩余 %1d 次机会</string>
+    <string name="failed">验证失败，结束，是设备锁定</string>
+    <string name="start_failed">设备暂时被锁定</string>
+
+    <string name="click_to_start">请点击开始验证按钮开始</string>
+    <string name="btn_start">开始验证</string>
+    <string name="btn_copy">复制信息</string>
+    <string name="copied">已复制</string>
+    <string name="stopped_by_life_callback">指纹验证已停止，请重新打开APP再试</string>
+    <!--    #####-->
+
+    <string name="please_input_hone_num">请输入您的手机号码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="register_login">注册／登录</string>
+
+    <string name="read_register">注册即表示您已经阅读，并同意 <Data><![CDATA[<font color="#ffd900">《用户服务协议》</font>]]></Data></string>
+    <string name="upload_you_header">上传您的头像</string>
+    <string name="please_input_company_name">请输入您的公司名称</string>
+    <string name="please_input_your_birthday">您的生日</string>
+    <string name="please_input_company_name_correct">请输入正确的公司名称</string>
+    <string name="please_input_you_name">请输入您的呢称</string>
+    <string name="please_input_you_name_correct">请输入正确的昵称</string>
+    <string name="please_input_referrer_mobile">请输入推荐人手机号</string>
+    <string name="complete">完成</string>
+    <string name="next">下一步(1/2)</string>
+
+    <string name="code_info">支付／健身打卡</string>
+    <string name="my_code">我的二维码</string>
+    <string name="user_center_score">我的积分</string>
+    <string name="user_center_score_gz">积分规则</string>
+    <string name="user_center_score_dh">积分兑换</string>
+    <string name="user_center_score_jl">兑换记录</string>
+    <string name="user_center_company">企业账号</string>
+    <string name="user_center_print">打印记录</string>
+
+    <string name="score_rules">适用说明</string>
+
+    <string name="user_center_print_dy">打印</string>
+    <string name="user_center_print_fy">复印</string>
+    <string name="user_center_print_sm">扫描</string>
+
+    <string name="corporation_1_1">本月剩余免费分钟数 (大会议室)</string>
+    <string name="corporation_1_2">预定会议室使用</string>
+    <string name="corporation_2_1">本月剩余免费分钟数 (小会议室)</string>
+    <string name="corporation_2_2">打印 / 复印 / 扫描使用</string>
+    <string name="corporation_3_1">本月剩余打印赠送金额</string>
+    <string name="corporation_3_2">企业记账使用</string>
+
+    <string name="corporation_cny"> 元</string>
+    <string name="corporation_min"> 分钟</string>
+
+
+    <string name="user_score_dh">立即兑换</string>
+    <string name="user_score_jfmx">积分明细</string>
+    <string name="user_score_jfbz">积分不足</string>
+    <string name="user_score_trans">兑换</string>
+    <string name="user_score_done">已兑换</string>
+
+    <string name="now_recharge">立即充值</string>
+    <string name="please_setting_pay_password">请设置 6 位支付密码</string>
+    <string name="order_num_product">共%1$d件商品 实付款： </string>
+    <string name="not_user_coupon">不使用优惠券</string>
+
+
+    <string name="finger_pay">指纹支付</string>
+    <string name="set_pay_pws">设置支付密码</string>
+    <string name="free_price_num">免密金额 (小于等于以下金额)</string>
+    <string name="free_pws_pay">小额免密支付</string>
+    <string name="device">设备：</string>
+    <string name="person_num">人数：</string>
+    <string name="price">价格：</string>
+    <string name="time_interval">时段：</string>
+
+    <string name="hold_person_num">容纳人数</string>
+    <string name="start_time">开始时间</string>
+    <string name="user_show">使用说明：</string>
+    <string name="cancel">取消</string>
+    <string name="used_password">使用密码</string>
+    <string name="please_check_finger">请验证指纹</string>
+    <string name="try_again">再试一次</string>
+    <string name="device_lock_again">指纹设备被锁定，请稍后再试</string>
+    <string name="open_success">开启成功</string>
+    <string name="validity_time">有效期：</string>
+    <string name="recharge_complete">充值完成</string>
+    <string name="look_my_code">查看二维码</string>
+    <string name="change_center">切换中心</string>
+    <string name="your_current_location">您当前所在位置</string>
+    <string name="select_center">选择所在中心</string>
+    <string name="guide_step_one">下一步(1/2)</string>
+    <string name="guide_step_two">知道了(2/2)</string>
+    <string name="show_all_text">展开全文</string>
+    <string name="hide_some_text">收起</string>
+    <string name="you_can_open_room">你可以解锁的房间</string>
+    <string name="blue_searching">正在搜索</string>
+    <string name="blue_down_refresh">下拉刷新</string>
+
+
+    <string name="ble_not_supported">该手机不支持蓝牙</string>
+    <string name="ble_not_open">请打开蓝牙开关</string>
+    <string name="ble_opent_error_msg"><Data><![CDATA[~~(>_<)~~]]></Data>，开门失败，请联系前台客服登记</string>
+    <string name="ble_net_error_msg">网络开小差，请检查网络连接后重试</string>
+    <string name="search_fail_please_open_blue">搜索失败\n请打开蓝牙设备</string>
+    <string name="door_lock_collect">门锁收藏</string>
+    <string name="door_lock_select">选择门锁</string>
+    <string name="my_collect_door">我的常用门</string>
+    <string name="add_collect_door">添加常用门</string>
+    <string name="to_collect">去收藏</string>
+    <string name="scan_to_add_friend">扫一扫二维码，加我为好友</string>
+    <string name="yes_or_no_exit_login">是否退出登陆</string>
+
+
+    <!--1.4.0.14  活动收费、会议室、访客记录-->
+    <string name="input_contact_info">填写联系人信息</string>
+    <string name="contact_info">联系人信息</string>
+    <string name="contact">联系人</string>
+    <string name="mobile_code">手机号</string>
+    <string name="wx_code">微信号</string>
+    <string name="remark">备注</string>
+    <string name="please_input_name">请输入姓名</string>
+    <string name="please_input_wx">请输入微信号</string>
+    <string name="please_input_remark">请输入您的备注</string>
+    <string name="activity_time">时间：%1$s</string>
+    <string name="activity_adrress">地址：%1$s</string>
+    <string name="activity_remain_num">剩余名额：%1$s</string>
+    <string name="combo_select">套餐选择</string>
+
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="pay_acount">支付金额：<Data><![CDATA[<font color="#ff8149">%1$s</font>]]></Data></string>
+    <string name="sumbit_order">提交订单</string>
+    <string name="enter_apply">确认报名</string>
+    <string name="appointment_detail">预约详情</string>
+    <string name="activity_remain_and_used_num">剩余名额：%1$d (已使用：%2$d)</string>
+    <string name="valid_time">有效期：%1$s</string>
+    <string name="create_man">创建人</string>
+    <string name="order_code">订单号</string>
+    <string name="need_verification_num">需要核销的张数</string>
+    <string name="enter">确认</string>
+
+    <string name="onpent_door_fail_retry">解锁失败，请重新尝试解锁</string>
+    <string name="vip_benefit">会员福利</string>
+    <string name="visit_invite">邀请访客</string>
+    <string name="visit_select_center">选择到访中心</string>
+    <string name="visit_center">到访中心</string>
+    <string name="visit_time">来访时间</string>
+    <string name="visit_num">人数</string>
+    <string name="visit_purpose">来访目的</string>
+    <string name="send_visit">发起邀请</string>
+    <string name="title_activity_select_visit_center">SelectVisitCenterActivity</string>
+    <string name="visit_record">访客记录</string>
+    <string name="visit_not">未来访</string>
+    <string name="visit_complete">已来访</string>
+    <string name="visit_cancel">已取消</string>
+
+    <string name="visit_date_colon"><Data><![CDATA[<font color="#bdbdbd">来访日期:&emsp</font>]]></Data>%1$s</string>
+    <string name="visit_num_colon"><Data><![CDATA[<font color="#bdbdbd">人数:&emsp</font>]]></Data>%1$d</string>
+    <string name="visit_unit_colon"><Data><![CDATA[<font color="#bdbdbd">到访中心:&emsp</font>]]></Data>%1$s</string>
+    <string name="visit_purpose_colon">来访目的:</string>
+    <string name="send_invite">发送邀请</string>
+    <string name="visit_actual_time">实际来访:<Data><![CDATA[<font>&emsp</font>]]></Data>%1$s</string>
+    <string name="cancel_visit">取消邀请</string>
+    <string name="share_invite_card">分享邀请卡</string>
+    <string name="wechart_friend">微信好友</string>
+    <string name="msg_share">短信分享</string>
+    <string name="visit_share_tip">访客进入链接登记后，凭邀请卡的\n二维码在 ATLAS 前台领门禁卡</string>
+    <string name="visit_share_title">ATLAS 寰图来访邀请</string>
+    <string name="visit_shate_content"> 邀请您来访，点击查看，完成信息填写，凭二维码到 ATLAS 寰图前台换取临时门禁卡。</string>
+    <string name="share_msg_visit_invite">您好，%1$s 邀请您来访，点击此链接 %2$s，填写信息，获取二维码，凭二维码到 ATLAS 寰图前台换取临时门禁卡。—— ATLAS 寰图欢迎您的到来！</string>
+    <string name="added_value">增值服务</string>
+    <string name="detail_price_table">详细价目表 ></string>
+    <string name="price_table">价目表</string>
+    <string name="base_price">基础价格</string>
+    <string name="select_price">可选组合</string>
+    <string name="limt_select_time_district_30">请选择30天范围内的时间</string>
+    <string name="acticity_overdue">活动已过期</string>
+    <string name="validity_times">有效期</string>
+    <string name="yuan_unit">元/小时</string>
+    <string name="yuan">元</string>
+    <string name="this_activity_inviateUserOnly">本活动仅限受邀用户参与</string>
+    <string name="unpaid">未支付，马上支付</string>
+    <string name="you_unser_visit">抱歉，Workplace租户才能邀请访客</string>
+    <string name="gogrenn_course">高尔夫教学</string>
+
+
+
+
+    <!--1.6.0-->
+    <string name="result">开门结果：</string>
+    <string name="result_password_error">密码错误</string>
+    <string name="result_bluetooth_break">蓝牙断开，请重新打开。</string>
+    <string name="result_blue_weak">蓝牙信号弱，请靠近门锁。</string>
+    <string name="result_timeout">蓝牙适配超时，请稍后再试！</string>
+    <string name="about_atlas">关于 ATLAS 寰图</string>
+
+    <!--打印-->
+    <string name="print_color">彩色</string>
+    <string name="print_blackandwhite">黑白</string>
+
+    <string name="print_state_1">未付款</string>
+    <string name="print_state_2">正在校验</string>
+    <string name="print_state_3">部分成功</string>
+    <string name="print_state_4">失败</string>
+    <string name="print_state_5">成功</string>
+
+    <string name="print_page">实际完成页数: </string>
+    <string name="print_page_page">页数: </string>
+    <string name="print_page_order">订单号: </string>
+
+    <string name="print_detail_content_1">请按打印机面板提示操作\n文印任务完成后，再关闭此页面</string>
+    <string name="print_detail_content_2">您已登出打印机</string>
+    <string name="print_detail_btn_1">我已完成</string>
+    <string name="print_detail_btn_2">关闭</string>
+
+
+    <!--2.0-->
+    <string name="index_top_bluetooth">蓝牙开门</string>
+    <string name="index_top_food">在线点餐</string>
+    <string name="index_top_class">课程预约</string>
+    <string name="index_top_meeting">预定会议室</string>
+    <string name="index_top_yhq">优惠券</string>
+    <string name="index_top_invite">访客邀请</string>
+    <string name="index_top_money">充值</string>
+    <string name="index_top_all">全部</string>
+
+    <string name="index_news_title">发动态</string>
+    <string name="index_news_submit">发布</string>
+
+    <string name="index_tag_circle">圈子</string>
+    <string name="index_tag_detail">话题详情</string>
+
+    <string name="index_tag_no_net">网络不通，轻触刷新网络</string>
+
+
+    <string name="index_living_space">生活空间</string>
+
+    <string name="index_living_space_food">寰图餐饮</string>
+    <string name="index_living_space_fb">| F&#38;B</string>
+
+    <string name="index_living_space_sport">寰图体育</string>
+    <string name="index_living_space_sport_">| SPORTS</string>
+
+    <string name="index_living_space_studio">寰图艺坊</string>
+    <string name="index_living_space_studio_">| STUDIO</string>
+
+    <string name="index_living_space_food_kitchen">厨房</string>
+    <string name="index_living_space_food_kitchen_">KITCHEN</string>
+
+    <string name="index_living_space_food_coffe">咖啡 &#38; 寰萄</string>
+    <string name="index_living_space_food_coffe_">COFFEE &#38; WINE COLLECTIVES</string>
+
+    <string name="index_living_space_sport_fitness">健身工房</string>
+    <string name="index_living_space_sport_fitness_">FITNESS</string>
+
+    <string name="index_living_space_sport_golf">高尔夫</string>
+    <string name="index_living_space_sport_golf_">GOGREEN</string>
+
+    <string name="from_circle">来自圈子：</string>
+    <string name="from_circle_">来自圈子</string>
+    <string name="comment">评论</string>
+    <string name="all_comment">全部 %1$s 条评论</string>
+    <string name="share">分享</string>
+    <string name="follow">关注</string>
+    <string name="newest"> 最新</string>
+    <string name="hottest">热门 </string>
+
+    <string name="follow_in">报名</string>
+
+    <string name="coffee_list">寰图咖啡(雅居乐)</string>
+    <string name="input_keys">请输入搜索关键字</string>
+    <string name="guangzhou">广州</string>
+
+    <string name="all_price">总价 ￥</string>
+
+    <string name="logo">logo</string>
+    <string name="name">名称</string>
+    <string name="lxr">联系人</string>
+    <string name="phone">电话</string>
+    <string name="content">介绍</string>
+
+    <string name="choose">选择优惠券</string>
+    <string name="done">确定</string>
+    <string name="show_scan">消费时请向店员出示此二维码</string>
+
+    <string name="other_wise">课程其它时间安排</string>
+    <string name="produce">产品介绍</string>
+
+    <string name="no_door">您还没有添加常用门</string>
+
+    <string name="phone_number">手机号码</string>
+    <string name="code_number">验证码</string>
+    <string name="input_phone_number">请输入手机号码</string>
+
+    <string name="each_0">0 元/笔</string>
+    <string name="each_50">50 元/笔</string>
+    <string name="each_100">100 元/笔</string>
+    <string name="each_200">200 元/笔</string>
+
+    <string name="choose_habits">选择兴趣</string>
+    <string name="back">返回</string>
+
+    <string name="input_text">输入你的文字</string>
+    <string name="share_text">分享您的内容，分享您的快乐</string>
+
+    <string name="other_count">其他账号</string>
+    <string name="login">登录</string>
+
+    <string name="code_text">收不到验证码？试试 </string>
+    <string name="code_text_">语音验证码</string>
+
+    <string name="meeting_room_name">会议室名称</string>
+    <string name="meeting_room_num">会议室编号</string>
+    <string name="meeting_room_person">容纳人数</string>
+    <string name="meeting_room_price">价格</string>
+    <string name="meeting_room_book">预约</string>
+
+    <string name="yuan_hour"> 元/小时</string>
+
+    <string name="meeting_name">会议名称</string>
+    <string name="meeting_time">开始时间</string>
+    <string name="meeting_end">结束时间</string>
+    <string name="meeting_person">参会人数</string>
+    <string name="meeting_other">其他要求</string>
+    <string name="meeting_book">预定</string>
+
+    <string name="c_info">企业信息</string>
+    <string name="c_person">企业联系人</string>
+    <string name="c_phone">联系电话</string>
+
+    <string name="c_ed">额度查询</string>
+    <string name="c_zd">企业账单</string>
+    <string name="c_qy">企业权益</string>
+    <string name="c_yg">企业员工</string>
+    <string name="c_zl">资料编辑</string>
+
+    <string name="ksyz">开始验证</string>
+
+    <string name="set_jc">检测新版本</string>
+    <string name="set_fk">意见反馈</string>
+    <string name="log_out">退出登录</string>
+
+    <string name="check_out">钱包余额（元）</string>
+    <string name="check_add">充值</string>
+
+    <string name="order_id">订单号：</string>
+    <string name="status_wait">待付款</string>
+    <string name="status_done">已完成</string>
+    <string name="order_yh">共优惠</string>
+    <string name="order_qy">企业账户支付</string>
+    <string name="order_all">总金额:</string>
+
+    <string name="input_psw">请设置您的密码</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="check_order">查看订单</string>
+
+    <string name="coach_room">寰图健身工房</string>
+    <string name="coach_zz">资质</string>
+    <string name="coach_jj">简介</string>
+
+    <string name="head_icon">点击上传头像</string>
+
+    <string name="nick">填写昵称</string>
+
+    <string name="welcome_text">欢迎来到 ATLAS</string>
+    <string name="skip">跳过</string>
+    <string name="buy_now">立即购买</string>
+    <string name="input_skill">请填写技能</string>
+
+    <string name="answer">回答</string>
+    <string name="tag">话题</string>
+    <string name="tag_text">话题动态</string>
+
+    <string name="post_text">发表你想说的内容吧...</string>
+    <string name="post_string">发表</string>
+
+    <string name="private_card">个人名片</string>
+
+    <string name="add_friends">加为好友</string>
+    <string name="agreed">同意</string>
+
+    <string name="welcome_atlas">进入 ATLAS 寰图</string>
+    <string name="send">发送</string>
+
+    <string name="post_text_circle">发表动态</string>
+    <string name="share_your_mind">分享您的想法...</string>
+
+    <string name="share_your_">分享动态</string>
+    <string name="share_your_text">说两句分享到会员动态吧</string>
+
+    <string name="company_list">公司列表</string>
+
+    <string name="text_1">免除现场排队的烦恼</string>
+    <string name="text_2">在线点餐 到店自取</string>
+    <string name="text_3">立刻点餐</string>
+
+    <string name="text_4">美好的一天\n从寰图咖啡开始</string>
+    <string name="text_5">未填写</string>
+    <string name="text_6">ATLAS 推荐</string>
+
+    <string name="tag_act">更多话题 / 活动  </string>
+    <string name="post_share">有什么新鲜事想分享？</string>
+
+    <string name="text_7">会员动态</string>
+    <string name="text_8">2018了，晒晒你18岁和现在(工作后)的照片吧</string>
+    <string name="text_9">相机胶卷</string>
+    <string name="text_10">超值下午茶推荐</string>
+    <string name="text_11">套餐系列</string>
+    <string name="text_12">其他（点击输入）</string>
+    <string name="text_13">展开详情</string>
+    <string name="text_14">今日</string>
+    <string name="text_15">支付</string>
+    <string name="text_16">已预约</string>
+    <string name="text_17">地址</string>
+    <string name="text_18">周日</string>
+    <string name="text_19">前往领劵中心</string>
+    <string name="text_20">自助点餐</string>
+    <string name="text_21">外卖</string>
+    <string name="text_22">支付安全</string>
+    <string name="text_23">我的订单</string>
+    <string name="text_24">我的预约</string>
+    <string name="text_25">我的钱包</string>
+    <string name="text_26">企业帐号</string>
+    <string name="text_27">个人信息</string>
+    <string name="text_28">设置</string>
+    <string name="text_29">正在进行微信支付...</string>
+    <string name="text_30">付款详情</string>
+    <string name="text_31">元，你还需付</string>
+    <string name="text_32">促销:</string>
+    <string name="text_33">促销活动八折优惠</string>
+    <string name="text_34">使用余额支付</string>
+    <string name="text_35">暂无</string>
+    <string name="text_36">人数</string>
+    <string name="text_37">时间</string>
+    <string name="text_38">选择优惠券</string>
+    <string name="text_39">不使用优惠券</string>
+    <string name="text_40">确认支付</string>
+    <string name="text_41">请输入支付密码</string>
+    <string name="text_42">金额</string>
+    <string name="text_43">照片</string>
+    <string name="text_44">未知</string>
+    <string name="text_45">半天</string>
+    <string name="text_46">开门</string>
+    <string name="text_47">发现</string>
+    <string name="text_48">会议室筛选</string>
+    <string name="text_49">寰图Work Place</string>
+    <string name="text_50">课程时间</string>
+    <string name="text_51">上课地点</string>
+    <string name="text_52">预约课程</string>
+    <string name="text_53">抵</string>
+    <string name="text_54">抵扣</string>
+    <string name="text_55">促</string>
+    <string name="text_56">促销</string>
+    <string name="text_57">券</string>
+    <string name="text_58">优惠券</string>
+    <string name="text_59">微信支付</string>
+    <string name="text_60">下拉加载更多</string>
+    <string name="text_61">时长（月）</string>
+    <string name="text_62">购买个数</string>
+    <string name="text_63">立即支付</string>
+    <string name="text_64">搜索</string>
+    <string name="text_65">活动推荐</string>
+    <string name="text_66">手机</string>
+    <string name="text_67">温馨提示</string>
+    <string name="text_68">您还没有登录，请先登录！</string>
+    <string name="text_69">动态详情</string>
+    <string name="text_70">请对准二维码进行扫描</string>
+    <string name="text_71">至</string>
+    <string name="text_72">yyyy年MM月</string>
+    <string name="text_73">账单</string>
+    <string name="text_74">领券日期:</string>
+    <string name="text_75">领取优惠券</string>
+    <string name="text_76">领取优惠券成功</string>
+    <string name="text_77">收起</string>
+    <string name="text_78">课程时间:</string>
+    <string name="text_79">星期</string>
+    <string name="text_80">周</string>
+    <string name="text_81">有效期还剩</string>
+    <string name="text_82">已使用</string>
+    <string name="text_83">已过期</string>
+    <string name="text_sheng">剩</string>
+    <string name="text_tian">天</string>
+    <string name="text_suliang">数量：</string>
+    <string name="text_score">分</string>
+    <string name="text_score_">分</string>
+    <string name="text_yuan">元</string>
+    <string name="text_84">您预约的服务为\"</string>
+    <string name="text_85">\"，稍后我们将与您联系！</string>
+    <string name="text_86">确定预约</string>
+    <string name="text_87">您已成功预约服务！</string>
+    <string name="text_88">创意公共空间展示</string>
+    <string name="text_89">获取订单中...</string>
+    <string name="text_90">订单还未支付，是否确认退出？</string>
+    <string name="text_no">否</string>
+    <string name="text_yes">是</string>
+    <string name="text_91">不支持蓝牙设备</string>
+    <string name="text_ky">可用</string>
+    <string name="text_bky">不可用</string>
+    <string name="text_92">实际支付金额不能为0元</string>
+    <string name="text_93">支付成功</string>
+    <string name="text_94">指纹支付成功</string>
+    <string name="text_95">免密支付成功</string>
+    <string name="text_96">活动图集</string>
+    <string name="text_97">最近</string>
+    <string name="text_98">房门</string>
+    <string name="text_99">过道门</string>
+    <string name="text_100">已选</string>
+    <string name="t1">因位置变更，是否切换到</string>
+    <string name="t2">请检查网络是否畅通！</string>
+    <string name="t3">重试</string>
+    <string name="t4">活动：</string>
+    <string name="text_ren">人</string>
+    <string name="t5">地址：</string>
+    <string name="t6">报名时间已截止</string>
+    <string name="t7">报名时间未开始</string>
+    <string name="t8">已报名</string>
+    <string name="t9">手慢了，名额已满</string>
+    <string name="t10">立即报名</string>
+    <string name="t11">已报名，查看详情</string>
+    <string name="t12">活动参与人数(</string>
+    <string name="t13">经纬度值:</string>
+    <string name="t14">位置描述:</string>
+    <string name="t15">搜索不到地址</string>
+    <string name="t16">活动详情</string>
+    <string name="t17">活动参与人列表</string>
+    <string name="t18">请输入您想发表的内容</string>
+    <string name="t19">全部课程</string>
+    <string name="t20">课程详情</string>
+    <string name="t21">通话协议版本不一致</string>
+    <string name="t22">[表情]</string>
+    <string name="t23">IM帐号已经被移除</string>
+    <string name="t24">IM帐号在其他设备登录</string>
+    <string name="t25">您好，我已加您为好友</string>
+    <string name="t26">查询失败：</string>
+    <string name="hour">小时</string>
+    <string name="min">分钟</string>
+    <string name="second">秒</string>
+    <string name="t27">| 步行</string>
+    <string name="t29">请求网络中...</string>
+    <string name="t30">绑定设备成功</string>
+    <string name="t31">请输入11位数手机号码</string>
+    <string name="t32">验证码发送成功！</string>
+    <string name="t33">请打开网络</string>
+    <string name="t34">请稍后重试</string>
+    <string name="t35">秒后可重发</string>
+    <string name="t36">获取验证码</string>
+    <string name="t37">请选择生日</string>
+    <string name="t38">生日不能大于当前时间</string>
+    <string name="t39">请输入正确的手机号</string>
+    <string name="t40">不能邀请自己哦</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="t41">输入昵称</string>
+    <string name="t42">ATLAS 寰图用户服务协议</string>
+    <string name="t43">请输入四位数验证码</string>
+    <string name="t44">全部图片</string>
+    <string name="t45">商户不限</string>
+    <string name="t46">有效期从：</string>
+    <string name="t47">关于ATLAS寰图</string>
+    <string name="t48">成功核销</string>
+    <string name="t49">公司名不能为空</string>
+    <string name="t50">您没有有效的合同！</string>
+    <string name="t51">联系人不能为空</string>
+    <string name="t52">电话不能为空</string>
+    <string name="t53">是否保存编辑页内容？</string>
+    <string name="t54">编辑资料</string>
+    <string name="t55">领券中心</string>
+    <string name="t56">修改资料</string>
+    <string name="t57">修改手机号</string>
+    <string name="t58">手机号码修改成功</string>
+    <string name="t59">您的邮箱</string>
+    <string name="t60">请填写邮箱</string>
+    <string name="t61">请输入正确的邮箱</string>
+    <string name="t62">选择行业</string>
+    <string name="t63">请输入行业</string>
+    <string name="t64">您的职位</string>
+    <string name="t65">请填写职位</string>
+    <string name="t66">进行中</string>
+    <string name="t67">已完成</string>
+    <string name="t68">公司列表</string>
+    <string name="t69">合同列表</string>
+    <string name="t70">编号:</string>
+    <string name="t71">未使用</string>
+    <string name="t72">已使用</string>
+    <string name="t73">已过期</string>
+    <string name="t74">消费记录</string>
+    <string name="t75">本月</string>
+    <string name="t76">今日</string>
+    <string name="t77">寰图咖啡(雅居乐中心)</string>
+    <string name="t78">未登录</string>
+    <string name="t79">设置成功</string>
+    <string name="t80">当前地址:</string>
+    <string name="t81">请输入反馈意见</string>
+    <string name="t82">意见反馈</string>
+    <string name="t83">提交成功</string>
+    <string name="t84">我的订单</string>
+    <string name="t85">我的权益</string>
+    <string name="t86">积分规则</string>
+    <string name="t87">兑换成功</string>
+    <string name="t88">设置</string>
+    <string name="t89">ATLAS 寰图 V</string>
+    <string name="info1">id:</string>
+    <string name="info2">标题:</string>
+    <string name="info3">升级说明:</string>
+    <string name="info4">versionCode:</string>
+    <string name="info5">versionName:</string>
+    <string name="info6">发布时间:</string>
+    <string name="info7">安装包Md5:</string>
+    <string name="info8">安装包下载地址:</string>
+    <string name="info9">安装包大小:</string>
+    <string name="info10">弹窗间隔（ms）:</string>
+    <string name="info11">弹窗次数:</string>
+    <string name="info12">发布类型（0:测试 1:正式）:</string>
+    <string name="info13">弹窗类型（1:建议 2:强制 3:手工）:</string>
+    <string name="info14">图片地址：</string>
+    <string name="t90">提示</string>
+    <string name="t91">您还没设置支付密码，请设置支付密码</string>
+    <string name="t92">昵称</string>
+    <string name="t93">请设置6位的支付密码</string>
+    <string name="t94">请输入手机验证码</string>
+    <string name="t95">设置支付密码成功！</string>
+    <string name="t96">支付安全</string>
+    <string name="t97">元／笔</string>
+    <string name="t98">关闭</string>
+    <string name="t99">密码验证不通过</string>
+    <string name="t100">请选择性别</string>
+    <string name="s1">技能</string>
+    <string name="s2">请输入技能</string>
+    <string name="s3">私教简介</string>
+    <string name="s4">无</string>
+    <string name="s5">{\"message\":\"您好，请通过我的好友申请\",\"user\":{\"username\":\"</string>
+    <string name="s6">申请好友信息发送成功</string>
+    <string name="s7">您好，我已加您为好友</string>
+    <string name="s8">已同意</string>
+    <string name="s9">已拒绝</string>
+    <string name="s10">发送消息</string>
+    <string name="s11">加为好友</string>
+    <string name="s12">用户信息无效</string>
+    <string name="s13">个人信息</string>
+    <string name="s14">昵称</string>
+    <string name="s15">性别</string>
+    <string name="s16">手机号码</string>
+    <string name="s17">公司</string>
+    <string name="s18">生日</string>
+    <string name="s19">兴趣</string>
+    <string name="s20">选择兴趣</string>
+    <string name="s21">技能</string>
+    <string name="s22">输入技能</string>
+    <string name="s23">行业</string>
+    <string name="s24">所属行业</string>
+    <string name="s25">职位</string>
+    <string name="s26">您的职位</string>
+    <string name="s27">邮箱</string>
+    <string name="s28">您的邮箱</string>
+    <string name="s29">姓名</string>
+    <string name="s30">生日不能大于当前时间</string>
+    <string name="s31">周日</string>
+    <string name="s32">周一</string>
+    <string name="s33">周二</string>
+    <string name="s34">周三</string>
+    <string name="s35">周四</string>
+    <string name="s36">周五</string>
+    <string name="s37">周六</string>
+    <string name="s38">yyyy年MM月dd日HH时mm分ss秒</string>
+    <string name="s39">[年月日时分秒]</string>
+    <string name="s40">yyyy年MM月dd日HH时mm分ss秒</string>
+    <string name="s41">满#可用</string>
+    <string name="s42">折</string>
+    <string name="s43">免费兑换</string>
+    <string name="s44">元兑换</string>
+    <string name="s45">买#</string>
+    <string name="s46">送#</string>
+    <string name="s47">满#可用</string>
+    <string name="s48">#.0折</string>
+    <string name="s49">免费兑换</string>
+    <string name="s50">增#.00</string>
+    <string name="s51">买#.00</string>
+    <string name="s52">%.0f元/%d小时%d</string>
+    <string name="s53">%.0f元/小时</string>
+    <string name="s54">%.0f元/%d小时</string>
+    <string name="s55">%.0f元/分钟</string>
+    <string name="s56">%.0f元/%d分钟</string>
+    <string name="s57">元/小时</string>
+    <string name="s58">系统</string>
+    <string name="s59">消费</string>
+    <string name="s60">充值</string>
+    <string name="s61">退款</string>
+    <string name="s62">撤销充值</string>
+    <string name="s63">会议室</string>
+    <string name="s64">健身课程</string>
+    <string name="s65">ATLAS 活动</string>
+    <string name="s66">会员免费</string>
+    <string name="s67">已完成</string>
+    <string name="s68">待支付</string>
+    <string name="s69">已退款</string>
+    <string name="s70">商户不限</string>
+    <string name="s71">提示</string>
+    <string name="s72">对话框</string>
+    <string name="s74">寰图精彩活动推荐</string>
+    <string name="s75">拍照</string>
+    <string name="s76">从相册中选择</string>
+    <string name="s77">正在上传</string>
+    <string name="s78">验证支付密码</string>
+    <string name="s79">您需支付</string>
+    <string name="s80">余额支付</string>
+    <string name="s81">支付宝支付</string>
+    <string name="s82">微信支付</string>
+    <string name="s83">MM月dd日</string>
+    <string name="s84">剩余名额</string>
+    <string name="s85">不参与促销活动</string>
+    <string name="s86">未填写</string>
+    <string name="w7">星期日</string>
+    <string name="w1">星期一</string>
+    <string name="w2">星期二</string>
+    <string name="w3">星期三</string>
+    <string name="w4">星期四</string>
+    <string name="w5">星期五</string>
+    <string name="w6">星期六</string>
+    <string name="s88">首页二维码</string>
+    <string name="s89">发现</string>
+    <string name="s90">yyyy年MMM</string>
+    <string name="s91">我的预约</string>
+    <string name="w17">日</string>
+    <string name="w11">一</string>
+    <string name="w12">二</string>
+    <string name="w13">三</string>
+    <string name="w14">四</string>
+    <string name="w15">五</string>
+    <string name="w16">六</string>
+    <string name="s92">选择与会人员</string>
+    <string name="s94">支付成功</string>
+    <string name="s95">支付错误</string>
+    <string name="s96">支付取消</string>
+    <string name="s97">再按一次退出程序</string>
+    <string name="s98">绑定设备成功</string>
+    <string name="e1">活动</string>
+    <string name="e2">话题</string>
+    <string name="e3">聊天</string>
+    <string name="s99">表情</string>
+    <string name="m1">正</string>
+    <string name="m2">二</string>
+    <string name="m3">三</string>
+    <string name="m4">四</string>
+    <string name="m5">五</string>
+    <string name="m6">六</string>
+    <string name="m7">七</string>
+    <string name="m8">八</string>
+    <string name="m9">九</string>
+    <string name="m10">十</string>
+    <string name="m11">冬月</string>
+    <string name="m12">腊月</string>
+    <string name="g1">甲</string>
+    <string name="g2">乙</string>
+    <string name="g3">丙</string>
+    <string name="g4">丁</string>
+    <string name="g5">戊</string>
+    <string name="g6">己</string>
+    <string name="g7">庚</string>
+    <string name="g8">辛</string>
+    <string name="g9">壬</string>
+    <string name="g10">癸</string>
+    <string name="z1">子</string>
+    <string name="z2">丑</string>
+    <string name="z3">寅</string>
+    <string name="z4">卯</string>
+    <string name="z5">辰</string>
+    <string name="z6">巳</string>
+    <string name="z7">午</string>
+    <string name="z8">未</string>
+    <string name="z9">申</string>
+    <string name="z10">酉</string>
+    <string name="z11">戌</string>
+    <string name="z12">亥</string>
+    <string name="sx1">鼠</string>
+    <string name="sx2">牛</string>
+    <string name="sx3">虎</string>
+    <string name="sx4">兔</string>
+    <string name="sx5">龙</string>
+    <string name="sx6">蛇</string>
+    <string name="sx7">马</string>
+    <string name="sx8">羊</string>
+    <string name="sx9">猴</string>
+    <string name="sx10">鸡</string>
+    <string name="sx11">狗</string>
+    <string name="sx12">猪</string>
+    <string name="my_act">我的动态</string>
+    <string name="post_dynamic">发布动态</string>
+    <string name="tv_china">中国</string>
+    <string name="tv_birthday">您的生日</string>
+    <string name="tv_hint_">推荐人手机号 ( 选填 )</string>
+    <string name="tv_input_company">请输入您的公司名称</string>
+
+    <string name="s100">昨天</string>
+    <string name="input_txt">输入你的文字</string>
+    <string name="im_voice">[语音]</string>
+    <string name="im_pic">[图片]</string>
+    <string name="im_exist">已存在</string>
+    <string name="im_save">已保存</string>
+    <string name="add_friends_">添加您为好友</string>
+    <string name="thumb">点赞</string>
+    <string name="answer_">回答</string>
+    <string name="followed">已关注</string>
+    <string name="txt_add_friends">添加好友</string>
+    <string name="dynamic_like">&#160;人点赞</string>
+    <string name="dynamic_comment">&#160;人评论</string>
+    <string name="company_none">· 公司尚未填写</string>
+    <string name="delete_dynamic">删除动态</string>
+    <string name="delete">删除</string>
+    <string name="tag_share">分享成功</string>
+    <string name="input_phone_error">请输入有效手机号码</string>
+    <string name="txt_delete">确定删除动态？</string>
+    <string name="txt_delete_comment">确定删除评论？</string>
+    <string name="txt_logout">确定退出？</string>
+    <string name="input_voice">按住说话</string>
+    <string name="chat_audio_too_short">录音过短，请重试</string>
+    <string name="chat_audio_too_long">录音过长，请重试</string>
+    <string name="chat_up_finger">手指上滑，取消发送</string>
+    <string name="input_text_img">动态不能为空</string>
+    <string name="all_world">全球</string>
+    <string name="ls_near">看看附近的</string>
+
+    <string name="chat_title">消息</string>
+    <string name="chat_dynamic">动态消息</string>
+    <string name="chat_sports">运动管家</string>
+    <string name="chat_workplace">办公空间管家</string>
+    <string name="chat_kitchen">餐饮管家</string>
+    <string name="chat_notice">通知</string>
+    <string name="language">语言设置</string>
+
+    <string name="language_text">简体中文</string>
+
+    <string name="language_cn_cn">简体中文</string>
+    <string name="language_cn_wt">繁体中文</string>
+    <string name="language_en">English</string>
+
+    <string name="workplace">办公空间</string>
+
+    <string name="time_chat_dynamic">MM月dd日 HH:mm</string>
+
+    <string name="look_for_more">查看更多 ></string>
+
+    <string name="no_friends">暂无新好友邀请</string>
+    <string name="delete_friends">确认删除好友?</string>
+    <string name="enter_new_phone">确认删除好友?</string>
+    <string name="clear_all_chat">清除所有聊天记录</string>
+    <string name="add_to_shopping_car">加入购物车</string>
+</resources>

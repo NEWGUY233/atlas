@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/half_tran"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/back"
+            android:paddingLeft="17dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/back"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="9/9"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:paddingRight="14dp"
+            android:src="@mipmap/nav_icon_publish_del"
+            android:id="@+id/delete"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.atlas.crmapp.widget.PhotoViewPager
+            android:id="@+id/view_pager_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_title" />
+
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/v_indicator"
+            android:layout_marginBottom="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,992 @@
+﻿<resources>
+    <string name="app_name">ATLAS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment!</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+    <string name="pay_result_callback_msg" formatted="false">WeChat pay result：%s</string>
+    <string name="enter_change">confirm the change</string>
+    <string name="set_pay_password">set pay password</string>
+    <string name="click_get">Send</string>
+    <string name="retry_send">send again</string>
+    <string name="click_retry_get">click to reacquire</string>
+    <string name="please_input_authc_code">Please enter the code</string>
+    <string name="please_input_pay_num"><font size="20">please input the amount to be charged</font></string>
+    <string name="wx_pay">WeChat Top up</string>
+    <string name="ali_pay">Alipay Top up</string>
+    <string name="please_select_pay_channel">please select payment method</string>
+    <string name="submit">submit</string>
+    <string name="save">save</string>
+    <string name="company">company</string>
+    <string name="please_input_you_opinion">Please input your opinion</string>
+    <string name="activity_limt_person_and_cost"><Data><![CDATA[<font color="#bdbdbd">活动人数限制 </font><font color="#ff0000">%1$s</font><font color="#bdbdbd">~%2$s人，每人费用 </font><font color="#ff0000">￥%3$s</font>]]></Data></string>
+    <string name="reserve_room">Meeting Room</string>
+    <string name="reserve_server">Service</string>
+    <string name="add_vip">join the membership</string>
+    <string name="meeting_look">Book a visit</string>
+
+    <string name="activity_recommend">Activity recommended</string>
+    <string name="private_introducer">Personal Coach</string>
+    <string name="reserve_course">Course Booking</string>
+    <string name="reserve_experience">Book a Visit</string>
+    <string name="more">more</string>
+    <string name="at_your_in_group">%schat with you in group chat</string>
+    <string name="is_quit_the_chat_room">whether to quit the chat room</string>
+    <string name="messages_are_empty">the chat record has been emptied</string>
+
+    <string name="is_modify_the_group_description">Group details are being modified..</string>
+    <string name="Modify_the_group_name_successful">Modification of the group name is successful</string>
+    <string name="Modify_the_group_description_successful">Modification of the group details is successful</string>
+    <string name="change_the_group_description_failed_please">Modification of the group details is failed. Please check the network or try again later</string>
+    <string name="change_the_group_description">change the group description</string>
+    <string name="search_contanier">search："%s"</string>
+    <string name="have_connected_with">Connection with the other party has been established</string>
+    <string name="no_call_data">no calling data</string>
+    <string name="network_unstable">network is unstable</string>
+    <string name="call_version_inconsistent">call protocol version inconsistent</string>
+
+    <string name="user_already_in_contactlist">this user is already your friend ( in the blacklist) and can be removed from the blacklist.</string>
+    <string name="refuse">refuse</string>
+    <string name="invite_join_group">invite to join the group：</string>
+    <string name="accept_join_group">accept to join the group：</string>
+    <string name="refuse_join_group">accept to join the group：</string>
+    <string name="Are_agree_with">Agreeing……</string>
+    <string name="Are_refuse_with">Refusing……</string>
+    <string name="Refuse_with_failure">Refuse failed:</string>
+
+
+    <string name="coffee">coffee</string>
+    <string name="to_account">pay now</string>
+    <string name="this_monent_recommend">Month\'s recommendation</string>
+
+    <string name="my_room">my conferences</string>
+    <string name="vip_product">membership products</string>
+    <string name="product_detail">product details</string>
+    <string name="product_introduce">product introduction</string>
+
+    <string name="order_detail">order details</string>
+    <string name="enter_order">confirm order</string>
+    <string name="quick_pay">pay now</string>
+    <string name="cancel_order">cancel order</string>
+    <string name="need_pay_money">need to pay: <font color="#ff8149">%1$s yuan</font></string>
+    <string name="real_pay_money">actually need to pay:： <Data><![CDATA[<font size="5" ,color="#ff8149">%1$s yuan</font>]]></Data></string>
+    <string name="coupon">coupon</string>
+    <string name="none_user_coupon">No coupon available</string>
+    <string name="have_user_coupon">Coupons available</string>
+
+    <string name="female">female</string>
+    <string name="male">male</string>
+
+    <string name="shopping_cart_null">shopping cart is empty~</string>
+    <string name="select_shopping">please select the items</string>
+    <string name="header_icon"> Profile Photo</string>
+    <string name="no_user">not to use</string>
+    <string name="select_coupon">select coupon</string>
+    <string name="free_money">total discount of %1$s yuan, and you need to pay</string>
+    <string name="free_money_">total discount of %1$s yuan</string>
+    <string name="limt_select_time_district">only the time within 15 days is available</string>
+
+    <string name="today_null_course">no courses today</string>
+    <string name="limt_order_hour">You can reserve for at least one hour</string>
+    <string name="need_beyond_current_time">The reservation time must be greater than the current time</string>
+    <string name="title_activity_amap">AMapActivity</string>
+    <string name="cancel_auth">cancel authority</string>
+    <string name="set_auth">set as authorizer</string>
+    <string name="owner">legal person</string>
+    <string name="authorized">authorizer</string>
+    <string name="corporation_preson">employee list</string>
+    <string name="please_set_pws">please set password</string>
+    <string name="balance">balance: %1$s yuan</string>
+
+    <string name="recharge_record">Top up record</string>
+    <string name="lesson_introduce">course introduction</string>
+    <string name="offlineCode">（Station ID：%1$s）</string>
+    <string name="to_be_bill">Unpaid bill</string>
+    <string name="recharge_detail">balance detail</string>
+
+    <string name="guide_down">drop down to the details of business type</string>
+    <string name="guide_left_right">Left - to - right sliding to change the business type</string>
+    <string name="know">I got it</string>
+    <string name="not_more">loading has been completed</string>
+    <string name="net_work_error">network disconnected</string>
+    <string name="click_retry">click Refresh</string>
+
+    <string name="free_user_min_and_remain_min">use free points %1$s minutes, with %2$s minutes remained</string>
+    <string name="free_user_min">use free points%1$s minutes</string>
+    <string name="free_user_min_">%1$s Points Printing Quota</string>
+    <string name="free_user_less_min_second">The remaining free points of %1$s minutes are less than the minimum billing unit, so the deduction is not available</string>
+    <string name="pay_recharge_detail">Top up details</string>
+    <string name="complete_order">complete order</string>
+    <string name="image_not_exist_retry_select">image does not exist, please select again</string>
+    <string name="please_open_permisstion_camera">please open the read-write storage and camera permissions</string>
+    <string name="please_open_permisstion_location">please open the location permission</string>
+
+    <string name="you_is_not_vip">you are not a member</string>
+    <string name="coup_and_benefit_not_used">coupon and promotion cannot be used at the same time</string>
+    <string name="company_bill">company bill</string>
+
+    <string name="my_appointment">My reservation</string>
+    <string name="my_wallet">My wallet</string>
+    <string name="my_coupon">My coupon</string>
+
+    <string name="umeng_meeting_room_list">list of reserved conference rooms</string>
+    <string name="umeng_meeting_room_detail">details of reserved conferences</string>
+    <string name="umeng_meeting_room_form">form of reserved conference rooms</string>
+
+    <string name="umeng_lesson_list">list of reserved courses</string>
+    <string name="umeng_lesson_detail">details of reserved conferences</string>
+
+    <string name="umeng_complete_order">complete order</string>
+    <string name="umeng_fitness_order">fitness course order</string>
+    <string name="umeng_metting_order">conference room order</string>
+
+
+    <!--    #####-->
+    <string name="time">time consumption:</string>
+    <string name="not_support">the condition is not satisfied, close</string>
+    <string name="start">Start authentication, please place your fingerprints</string>
+    <string name="succeed">pass the authentication, close</string>
+    <string name="not_match">fingerprints do not match, with %1d chances remained</string>
+    <string name="failed">authentication failed, close with device locked</string>
+    <string name="start_failed">device is temporarily locked</string>
+
+    <string name="click_to_start">click the Start Authentication button to start</string>
+    <string name="btn_start">start authentication</string>
+    <string name="btn_copy">copy information</string>
+    <string name="copied">copied</string>
+    <string name="stopped_by_life_callback">Fingerprint verification has stopped. Please reopen APP and try again</string>
+    <!--    #####-->
+
+    <string name="please_input_hone_num">Please input your mobile phone number</string>
+    <string name="please_input_code">Please enter the code</string>
+    <string name="register_login">Registration / login</string>
+
+    <string name="read_register">Registration means that you have read and agreed to the <Data><![CDATA[<font color="#ffd900">《User Services Agreement》</font>]]></Data></string>
+    <string name="upload_you_header">Upload your profile photo</string>
+    <string name="please_input_company_name">Please input your company name</string>
+    <string name="please_input_your_birthday">Your birthday</string>
+    <string name="please_input_company_name_correct">Please input the correct company name</string>
+    <string name="please_input_you_name">Please input your nickname</string>
+    <string name="please_input_you_name_correct">Please input the correct nickname</string>
+    <string name="please_input_referrer_mobile">Please input the referee\'s cell phone number</string>
+    <string name="complete">complete</string>
+    <string name="next">next(1/2)</string>
+
+    <string name="code_info">Payment/ Fitness</string>
+    <string name="my_code">My Q-R code</string>
+    <string name="user_center_score">My points</string>
+    <string name="user_center_score_gz">Point rule</string>
+    <string name="user_center_score_dh">Points exchange</string>
+    <string name="user_center_score_jl">Record</string>
+    <string name="user_center_company">Enterprise</string>
+    <string name="user_center_print">Print record</string>
+
+    <string name="score_rules">application description</string>
+
+    <string name="user_center_print_dy">Print</string>
+    <string name="user_center_print_fy">copy</string>
+    <string name="user_center_print_sm">scan</string>
+
+    <string name="corporation_1_1">Free minutes remained for this month( large conference room)</string>
+    <string name="corporation_1_2">use of reserved conference rooms</string>
+    <string name="corporation_2_1">Free minutes remained for this month( small conference room)</string>
+    <string name="corporation_2_2">Print/ Copy/ Scan to Use</string>
+    <string name="corporation_3_1">the remaining donation amount to be printed for this month</string>
+    <string name="corporation_3_2">For enterprise accounting</string>
+
+    <string name="corporation_cny"> Yuan</string>
+    <string name="corporation_min"> minutes</string>
+
+
+    <string name="user_score_dh">Exchange now</string>
+    <string name="user_score_jfmx">Point details</string>
+    <string name="user_score_jfbz">Lack point</string>
+    <string name="user_score_trans">Exchange</string>
+    <string name="user_score_done">Exchanged</string>
+
+    <string name="now_recharge">Charge now</string>
+    <string name="please_setting_pay_password">please set 6-bit payment code</string>
+    <string name="order_num_product">real payment for a total of %1$d items :： </string>
+    <string name="not_user_coupon">not use coupon</string>
+
+
+    <string name="finger_pay">Fingerprint payment</string>
+    <string name="set_pay_pws">Set the payment password</string>
+    <string name="free_price_num">Password-free amount (less than or equal to the following amount )</string>
+    <string name="free_pws_pay">Small amount password-free payment</string>
+    <string name="device">Device：</string>
+    <string name="person_num">Number of people：</string>
+    <string name="price">Price：</string>
+    <string name="time_interval">Time interval：</string>
+
+    <string name="hold_person_num">Seating capacity</string>
+    <string name="start_time">Start time</string>
+    <string name="user_show">Direction for use：</string>
+    <string name="cancel">Cancel</string>
+    <string name="used_password">Use a password</string>
+    <string name="please_check_finger">Please verify the fingerprint</string>
+    <string name="try_again">Try again</string>
+    <string name="device_lock_again">Fingerprint device is locked. Please try again later.</string>
+    <string name="open_success">Succeed to open</string>
+    <string name="validity_time">Validity time：</string>
+    <string name="recharge_complete">Complete recharging</string>
+    <string name="look_my_code">View QR code</string>
+    <string name="change_center">Switching center</string>
+    <string name="your_current_location">Your current location</string>
+    <string name="select_center">Select the center</string>
+    <string name="guide_step_one">Next step (1/2)</string>
+    <string name="guide_step_two">Got it (2/2)</string>
+    <string name="show_all_text">Unfold the text</string>
+    <string name="hide_some_text">Hide the text</string>
+    <string name="you_can_open_room">Room you can unlock.</string>
+    <string name="blue_searching">Searching.</string>
+    <string name="blue_down_refresh">Pull to refresh</string>
+
+
+    <string name="ble_not_supported">The phone does not support Bluetooth.</string>
+    <string name="ble_not_open">Please turn on the Bluetooth switch.</string>
+    <string name="ble_opent_error_msg"><Data><![CDATA[~~(>_<)~~]]></Data>，Failure to open the door. Please contact the front desk customer service for registration.</string>
+    <string name="ble_net_error_msg">Unable to connect to the network. Please check the network connection and try again.</string>
+    <string name="search_fail_please_open_blue">Search failure\nPlease turn on the Bluetooth device</string>
+    <string name="door_lock_collect">Lock collection</string>
+    <string name="door_lock_select">Select door lock</string>
+    <string name="my_collect_door">My usual door</string>
+    <string name="add_collect_door">Add usual door</string>
+    <string name="to_collect">To collect</string>
+    <string name="scan_to_add_friend">Scan the QR code and make me a good friend</string>
+    <string name="yes_or_no_exit_login">Exit or not</string>
+
+
+    <!--1.4.0.14  活动收费、会议室、访客记录-->
+    <string name="input_contact_info">Fill in contact information</string>
+    <string name="contact_info">Contact Information</string>
+    <string name="contact">Contacts</string>
+    <string name="mobile_code">Phone number</string>
+    <string name="wx_code">Wechat ID</string>
+    <string name="remark">Note</string>
+    <string name="please_input_name">Please enter your name</string>
+    <string name="please_input_wx">Please enter Wechat ID</string>
+    <string name="please_input_remark">Please enter your notes.</string>
+    <string name="activity_time">Time：%1$s</string>
+    <string name="activity_adrress">Address：%1$s</string>
+    <string name="activity_remain_num">Surplus quota：%1$s</string>
+    <string name="combo_select">Package selection</string>
+
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="pay_acount">Amount of payment：<Data><![CDATA[<font color="#ff8149">%1$s</font>]]></Data></string>
+    <string name="sumbit_order">Submit an order</string>
+    <string name="enter_apply">Submit an order</string>
+    <string name="appointment_detail">Reservation details</string>
+    <string name="activity_remain_and_used_num">Surplus quota：%1$d (used：%2$d)</string>
+    <string name="valid_time">Period of validity：%1$s</string>
+    <string name="create_man">Creator</string>
+    <string name="order_code">Order number</string>
+    <string name="need_verification_num">Number of sheets to be written off</string>
+    <string name="enter">Enter</string>
+
+    <string name="onpent_door_fail_retry">Unlock failed, Please try again.</string>
+    <string name="vip_benefit">Member Benefits</string>
+    <string name="visit_invite">Invitation</string>
+    <string name="visit_select_center">Select the visiting center</string>
+    <string name="visit_center">Visit the center</string>
+    <string name="visit_time">Visiting time</string>
+    <string name="visit_num">Number of visitors</string>
+    <string name="visit_purpose">Purpose of visit</string>
+    <string name="send_visit">Initiate an invitation</string>
+    <string name="title_activity_select_visit_center">SelectVisitCenterActivity</string>
+    <string name="visit_record">Initiate an invitation</string>
+    <string name="visit_not">Not yet visited</string>
+    <string name="visit_complete">Visit completed</string>
+    <string name="visit_cancel">Visit canceled</string>
+
+    <string name="visit_date_colon"><Data><![CDATA[<font color="#bdbdbd">来访日期:&emsp</font>]]></Data>%1$s</string>
+    <string name="visit_num_colon"><Data><![CDATA[<font color="#bdbdbd">人数:&emsp</font>]]></Data>%1$d</string>
+    <string name="visit_unit_colon"><Data><![CDATA[<font color="#bdbdbd">到访中心:&emsp</font>]]></Data>%1$s</string>
+    <string name="visit_purpose_colon">Purpose of visit:</string>
+    <string name="send_invite">Send an invitation</string>
+    <string name="visit_actual_time">Actual visit:<Data><![CDATA[<font>&emsp</font>]]></Data>%1$s</string>
+    <string name="cancel_visit">Cancel</string>
+    <string name="share_invite_card">Share the invitation card</string>
+    <string name="wechart_friend">Wechat friend</string>
+    <string name="msg_share">SMS sharing</string>
+    <string name="visit_share_tip">After entering the link for registration, the visitor may get the access card \n with the QR code of the invitation card at the ATLAS reception counter.</string>
+    <string name="visit_share_title">ATLAS visit invitation</string>
+    <string name="visit_shate_content"> You are invited for a visit. Click the View to complete the information. Get the temporary access card with the QR code at the ATLAS reception counter.</string>
+    <string name="share_msg_visit_invite">Hello，%1$s welcome to visit. Click on this link %2$s，ill in the information for QR code. Get the temporary access card with the QR code at the ATLAS service counter. —— Welcome to ATLAS!</string>
+    <string name="added_value">Value added service</string>
+    <string name="detail_price_table">Detailed price list ></string>
+    <string name="price_table">Price list</string>
+    <string name="base_price">Basic price</string>
+    <string name="select_price">Optional combination</string>
+    <string name="limt_select_time_district_30">Please select the time within the range of 30 days.</string>
+    <string name="acticity_overdue">Activity expired</string>
+    <string name="validity_times">Period of validity</string>
+    <string name="yuan_unit">Yuan/hour</string>
+    <string name="yuan">Yuan</string>
+    <string name="this_activity_inviateUserOnly">This event is open to invitees only.</string>
+    <string name="unpaid">Not yet paid. Please pay immediately.</string>
+    <string name="you_unser_visit">Sorry, only Workplace lessees can be invited visitors.</string>
+    <string name="gogrenn_course">Golf course</string>
+
+
+
+
+    <!--1.6.0-->
+    <string name="result">Open door result：</string>
+    <string name="result_password_error">Password error</string>
+    <string name="result_bluetooth_break">Bluetooth disconnected, Please reopen it.</string>
+    <string name="result_blue_weak">Bluetooth signal is weak. Please come close to the door lock.</string>
+    <string name="result_timeout">Bluetooth adaptation timeout. Please try again later.</string>
+    <string name="about_atlas">About ATLAS</string>
+
+    <!--打印-->
+    <string name="print_color">Color</string>
+    <string name="print_blackandwhite">Black and white</string>
+
+    <string name="print_state_1">Not yet paid</string>
+    <string name="print_state_2">Checking</string>
+    <string name="print_state_3">Partially successful</string>
+    <string name="print_state_4">Failed</string>
+    <string name="print_state_5">Successful</string>
+
+    <string name="print_page">Actually completed pages: </string>
+    <string name="print_page_page">Pages: </string>
+    <string name="print_page_order">Order number: </string>
+
+    <string name="print_detail_content_1">Please follow the printer panel instructions\nClose this page after the print task is completed.</string>
+    <string name="print_detail_content_2">You have logged out of the printer</string>
+    <string name="print_detail_btn_1">It is done</string>
+    <string name="print_detail_btn_2">Close</string>
+
+
+    <!--2.0-->
+    <string name="index_top_bluetooth">Open the door</string>
+    <string name="index_top_food">Online Ordering</string>
+    <string name="index_top_class">Course Booking</string>
+    <string name="index_top_meeting">Meeting Room</string>
+    <string name="index_top_yhq">Coupon</string>
+    <string name="index_top_invite">Invitation</string>
+    <string name="index_top_money">Top up</string>
+    <string name="index_top_all">All</string>
+
+    <string name="index_news_title">Post Moments</string>
+    <string name="index_news_submit">Post</string>
+
+    <string name="index_tag_circle">Circle</string>
+    <string name="index_tag_detail">Topic details</string>
+
+    <string name="index_tag_no_net">Network disconnected. Touch to refresh the network.</string>
+
+
+    <string name="index_living_space">Living Space</string>
+
+    <string name="index_living_space_food">ATLAS F&#38;B</string>
+    <string name="index_living_space_fb">| F&#38;B</string>
+
+    <string name="index_living_space_sport">ATLAS Sports</string>
+    <string name="index_living_space_sport_">| SPORTS</string>
+
+    <string name="index_living_space_studio">ATLAS Studio</string>
+    <string name="index_living_space_studio_">| STUDIO</string>
+
+    <string name="index_living_space_food_kitchen">Kitchen</string>
+    <string name="index_living_space_food_kitchen_">KITCHEN</string>
+
+    <string name="index_living_space_food_coffe">C &#38; W</string>
+    <string name="index_living_space_food_coffe_">COFFEE &#38; WINE COLLECTIVES</string>
+
+    <string name="index_living_space_sport_fitness">Fitness</string>
+    <string name="index_living_space_sport_fitness_">FITNESS</string>
+
+    <string name="index_living_space_sport_golf">Golf</string>
+    <string name="index_living_space_sport_golf_">GOGREEN</string>
+
+    <string name="from_circle">From the circle：</string>
+    <string name="from_circle_">From the circle</string>
+    <string name="comment">Comment</string>
+    <string name="all_comment">Totaling  %1$s comments</string>
+    <string name="share">Share</string>
+    <string name="follow">Follows</string>
+    <string name="newest"> Latest</string>
+    <string name="hottest">Hot </string>
+
+    <string name="follow_in">Sign up</string>
+
+    <string name="coffee_list">ATLAS coffee (Agile Property)</string>
+    <string name="input_keys">Please enter the search keyword.</string>
+    <string name="guangzhou">Guangzhou</string>
+
+    <string name="all_price">Total price ￥</string>
+
+    <string name="logo">logo</string>
+    <string name="name">Name</string>
+    <string name="lxr">Contacts</string>
+    <string name="phone">Phone number</string>
+    <string name="content">Content</string>
+
+    <string name="choose">Select coupon</string>
+    <string name="done">Done</string>
+    <string name="show_scan">Please show the QR code to the shop assistant when consuming</string>
+
+    <string name="other_wise">Other course schedule</string>
+    <string name="produce">Product presentation</string>
+
+    <string name="no_door">You haven\'t added a common door yet.</string>
+
+    <string name="phone_number">Phone number</string>
+    <string name="code_number">Verification code</string>
+    <string name="input_phone_number">Please enter mobile number</string>
+
+    <string name="each_0">0 yuan/deal</string>
+    <string name="each_50">50 yuan/deal</string>
+    <string name="each_100">100 yuan/deal</string>
+    <string name="each_200">200 yuan/deal</string>
+
+    <string name="choose_habits">Hobbies</string>
+    <string name="back">back</string>
+
+    <string name="input_text">Enter your text</string>
+    <string name="share_text">Share your content, share your happiness</string>
+
+    <string name="other_count">Other accounts</string>
+    <string name="login">Login</string>
+
+    <string name="code_text">Fail to receive the verification code？try </string>
+    <string name="code_text_">Voice verification code</string>
+
+    <string name="meeting_room_name">Conference room name</string>
+    <string name="meeting_room_num">Conference room number</string>
+    <string name="meeting_room_person">Seating capacity</string>
+    <string name="meeting_room_price">Price</string>
+    <string name="meeting_room_book">Book</string>
+
+    <string name="yuan_hour"> Yuan/hour</string>
+
+    <string name="meeting_name">Meeting name</string>
+    <string name="meeting_time">Start time</string>
+    <string name="meeting_end">End time</string>
+    <string name="meeting_person">Number of participants</string>
+    <string name="meeting_other">Other\nrequirements</string>
+    <string name="meeting_book">Booking</string>
+
+    <string name="c_info">Enterprise information</string>
+    <string name="c_person">Enterprise contact person</string>
+    <string name="c_phone">Contact phone number</string>
+
+    <string name="c_ed">Quota query</string>
+    <string name="c_zd">Enterprise bill</string>
+    <string name="c_qy">Rights &#38; Interests</string>
+    <string name="c_yg">Enterprise staff</string>
+    <string name="c_zl">Data editing</string>
+
+    <string name="ksyz">Start validation</string>
+
+    <string name="set_jc">Check for new versions</string>
+    <string name="set_fk">Feedback</string>
+    <string name="log_out">Log off</string>
+
+    <string name="check_out">Wallet balance (yuan) </string>
+    <string name="check_add">Top up</string>
+
+    <string name="order_id">Order number ：</string>
+    <string name="status_wait">Total due</string>
+    <string name="status_done">Done</string>
+    <string name="order_yh">Total discounts</string>
+    <string name="order_qy">Enterprise</string>
+    <string name="order_all">Aggregate amount :</string>
+
+    <string name="input_psw">Please set your password</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="check_order">Check order</string>
+
+    <string name="coach_room">Atlas fitness room</string>
+    <string name="coach_zz">Qualifications</string>
+    <string name="coach_jj">Brief introduction</string>
+
+    <string name="head_icon">Click to upload profile photo</string>
+
+    <string name="nick">Fill in the nickname</string>
+
+    <string name="welcome_text">Welcome to ATLAS</string>
+    <string name="skip">Skip</string>
+    <string name="buy_now">Buy now</string>
+    <string name="input_skill">Please fill in your skills</string>
+
+    <string name="answer">Answer</string>
+    <string name="tag">Topic</string>
+    <string name="tag_text">Topic moments</string>
+
+    <string name="post_text">Post what you want to say...</string>
+    <string name="post_string">Post</string>
+
+    <string name="private_card">Private card</string>
+
+    <string name="add_friends">Add as a friend</string>
+    <string name="agreed">Agreed</string>
+
+    <string name="welcome_atlas">Start</string>
+    <string name="send">Send</string>
+
+    <string name="post_text_circle">Post moments</string>
+    <string name="share_your_mind">Share your mind...</string>
+
+    <string name="share_your_">Share your mind</string>
+    <string name="share_your_text">Say a few words to share with the members.</string>
+
+    <string name="company_list">Company list</string>
+
+    <string name="text_1">Save the trouble of lining up on the spot</string>
+    <string name="text_2">Online ordering and pick it up at the shop.</string>
+    <string name="text_3">Order</string>
+
+    <string name="text_4">A nice day \n starts with ATLAS coffee.</string>
+    <string name="text_5">Not completed</string>
+    <string name="text_6">ATLAS\nRecommended</string>
+
+    <string name="tag_act">More topics/activities  </string>
+    <string name="post_share">What\'s new to share?</string>
+
+    <string name="text_7">Moments</string>
+    <string name="text_8">It’s 2018. Show your photos at 18 and now (after work).</string>
+    <string name="text_9">Camera film</string>
+    <string name="text_10">Extra-value afternoon tea recommendation</string>
+    <string name="text_11">Package series</string>
+    <string name="text_12">Other (click to input)</string>
+    <string name="text_13">Unfold details</string>
+    <string name="text_14">Today</string>
+    <string name="text_15">Pay</string>
+    <string name="text_16">Booked</string>
+    <string name="text_17">Address</string>
+    <string name="text_18">Sunday</string>
+    <string name="text_19">Go to the coupons center</string>
+    <string name="text_20">Self-help ordering</string>
+    <string name="text_21">Take-out</string>
+    <string name="text_22">Payment security</string>
+    <string name="text_23">My order</string>
+    <string name="text_24">My reservation</string>
+    <string name="text_25">My wallet</string>
+    <string name="text_26">Enterprise</string>
+    <string name="text_27">Personal information</string>
+    <string name="text_28">Setup</string>
+    <string name="text_29">WeChat Pay is under way...</string>
+    <string name="text_30">Payment particulars</string>
+    <string name="text_31">yuan，You still have to pay </string>
+    <string name="text_32">Sales promotion :</string>
+    <string name="text_33">20% discount on promotional activities</string>
+    <string name="text_34">Pay with the balance.</string>
+    <string name="text_35">Not available</string>
+    <string name="text_36">Number of people</string>
+    <string name="text_37">Time</string>
+    <string name="text_38">Select coupon</string>
+    <string name="text_39">Do not use coupons.</string>
+    <string name="text_40">Confirm payment</string>
+    <string name="text_41">Please enter password</string>
+    <string name="text_42">Amount of money</string>
+    <string name="text_43">Photo</string>
+    <string name="text_44">Unknown</string>
+    <string name="text_45">Half a day</string>
+    <string name="text_46">Open the door</string>
+    <string name="text_47">Find</string>
+    <string name="text_48">Conference room screening</string>
+    <string name="text_49">ATLAS Work Place</string>
+    <string name="text_50">Course time</string>
+    <string name="text_51">Place of class</string>
+    <string name="text_52">Reserved courses</string>
+    <string name="text_53">Deduction</string>
+    <string name="text_54">Deduction</string>
+    <string name="text_55">Promotion</string>
+    <string name="text_56">Sales promotion</string>
+    <string name="text_57">Coupon</string>
+    <string name="text_58">Coupon</string>
+    <string name="text_59">Pay with WeChat</string>
+    <string name="text_60">Pull down to load more</string>
+    <string name="text_61">Length (month)</string>
+    <string name="text_62">Number of purchases</string>
+    <string name="text_63">Immediate payment</string>
+    <string name="text_64">Search</string>
+    <string name="text_65">Activity recommended</string>
+    <string name="text_66">Cellphone</string>
+    <string name="text_67">kindly reminder</string>
+    <string name="text_68">You have not logged in. Please log in first!</string>
+    <string name="text_69">Moments details</string>
+    <string name="text_70">Scan by pointing to the QR code</string>
+    <string name="text_71">To</string>
+    <string name="text_72">yyyyYearMMmonth</string>
+    <string name="text_73">Bill</string>
+    <string name="text_74">Date of receiving coupon :</string>
+    <string name="text_75">Receive a coupon</string>
+    <string name="text_76">Successful receipt of coupons</string>
+    <string name="text_77">Pack up</string>
+    <string name="text_78">Pack up:</string>
+    <string name="text_79">Week</string>
+    <string name="text_80">Week</string>
+    <string name="text_81">Remaining validity period.</string>
+    <string name="text_82">Used</string>
+    <string name="text_83">Expired</string>
+    <string name="text_sheng">Remaining</string>
+    <string name="text_tian">Remaining</string>
+    <string name="text_suliang">Number：</string>
+    <string name="text_score">Point</string>
+    <string name="text_score_">Points</string>
+    <string name="text_yuan">Yuan</string>
+    <string name="text_84">Your booking service is\"</string>
+    <string name="text_85">\"，We will contact you later！</string>
+    <string name="text_86">Confirm an appointment</string>
+    <string name="text_87">You have successfully booked the service！</string>
+    <string name="text_88">Creative public space display</string>
+    <string name="text_89">Obtaining an order...</string>
+    <string name="text_90">The order has not been paid. Do you want to confirm your exit?</string>
+    <string name="text_no">No</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_91">Bluetooth devices not supported</string>
+    <string name="text_ky">Available</string>
+    <string name="text_bky">Not available</string>
+    <string name="text_92">The actual amount paid cannot be $0</string>
+    <string name="text_93">Payment succeeded</string>
+    <string name="text_94">Fingerprint payment succeeded</string>
+    <string name="text_95">Password-free payment succeeded</string>
+    <string name="text_96">Activity atlas</string>
+    <string name="text_97">Recently</string>
+    <string name="text_98">Door</string>
+    <string name="text_99">Aisle door</string>
+    <string name="text_100">Selected</string>
+    <string name="t1">Due to change of position, whether to switch to</string>
+    <string name="t2">Please check the network!</string>
+    <string name="t3">Retry</string>
+    <string name="t4">Activity：</string>
+    <string name="text_ren">Persons</string>
+    <string name="t5">Address：</string>
+    <string name="t6">Registration has ended.</string>
+    <string name="t7">Registration has not started.</string>
+    <string name="t8">Signed up</string>
+    <string name="t9">You are late. The quota has been filled.</string>
+    <string name="t10">Sign up immediately</string>
+    <string name="t11">Signed up. Check details.</string>
+    <string name="t12">Number of participants(</string>
+    <string name="t13">Latitude and longitude values::</string>
+    <string name="t14">Position description::</string>
+    <string name="t15">Can\'t find the address.</string>
+    <string name="t16">Details of activity</string>
+    <string name="t17">List of participants</string>
+    <string name="t18">Please enter what you want to voice.</string>
+    <string name="t19">All courses</string>
+    <string name="t20">Course details</string>
+    <string name="t21">Call protocol version inconsistent</string>
+    <string name="t22">[Expression]</string>
+    <string name="t23">IM account has been removed.</string>
+    <string name="t24">IM account has been logged on to other devices.</string>
+    <string name="t25">Hello, I have added you as a good friend.</string>
+    <string name="t26">Query failure：</string>
+    <string name="hour">Hour</string>
+    <string name="min">Minute</string>
+    <string name="second">Second</string>
+    <string name="t27">| Go on foot</string>
+    <string name="t29">Requesting network...</string>
+    <string name="t30">Binding device successfully</string>
+    <string name="t31">Please enter an 11-digit cell phone number.</string>
+    <string name="t32">Verification code sent successfully!！</string>
+    <string name="t33">Please open the network</string>
+    <string name="t34">Please try again later.</string>
+    <string name="t35">Sent again in //seconds</string>
+    <string name="t36">Acquire the verification code</string>
+    <string name="t37">Please choose your birthday</string>
+    <string name="t38">The birthday cannot be greater than the current time.</string>
+    <string name="t39">Please enter the correct mobile number.</string>
+    <string name="t40">You can\'t invite yourself.</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="t41">Enter a nickname.</string>
+    <string name="t42">ATLAS user service protocol</string>
+    <string name="t43">Please enter a four-digit verification code.</string>
+    <string name="t44">All pictures.</string>
+    <string name="t45">No limit to commercial tenants.</string>
+    <string name="t46">Period of validity from：</string>
+    <string name="t47">About ATLAS</string>
+    <string name="t48">Successful write-off</string>
+    <string name="t49">Company name cannot be empty.</string>
+    <string name="t50">You have no valid contract!</string>
+    <string name="t51">Contacts cannot be empty.</string>
+    <string name="t52">Phone number can\'t be empty.</string>
+    <string name="t53">Do you want to save the contents of the edited page?</string>
+    <string name="t54">Edit materials</string>
+    <string name="t55">Coupon center</string>
+    <string name="t56">Modification of data</string>
+    <string name="t57">Change Mobile</string>
+    <string name="t58">Cell phone number modified successfully</string>
+    <string name="t59">Your mailbox</string>
+    <string name="t60">Please fill in the mailbox.</string>
+    <string name="t61">Please fill in the mailbox.</string>
+    <string name="t62">Industry</string>
+    <string name="t63">Please enter the industry</string>
+    <string name="t64">Your position</string>
+    <string name="t65">Please fill in the position</string>
+    <string name="t66">Ongoing</string>
+    <string name="t67">Completed</string>
+    <string name="t68">Company list</string>
+    <string name="t69">Contract list</string>
+    <string name="t70">Serial number:</string>
+    <string name="t71">Unused</string>
+    <string name="t72">Used</string>
+    <string name="t73">Expired</string>
+    <string name="t74">Records of consumption</string>
+    <string name="t75">Current month</string>
+    <string name="t76">Today</string>
+    <string name="t77">ATLAS Coffee (Agile Property)</string>
+    <string name="t78">Not yet logged in</string>
+    <string name="t79">Setup succeeded</string>
+    <string name="t80">Current address :</string>
+    <string name="t81">Please enter feedback</string>
+    <string name="t82">Feedback</string>
+    <string name="t83">Submission succeeded</string>
+    <string name="t84">My order</string>
+    <string name="t85">My rights and interests</string>
+    <string name="t86">Points rule</string>
+    <string name="t87">Exchange succeeded</string>
+    <string name="t88">Setup</string>
+    <string name="t89">ATLAS 寰图 V</string>
+    <string name="info1">id:</string>
+    <string name="info2">Title :</string>
+    <string name="info3">Upgrading instructions:</string>
+    <string name="info4">versionCode:</string>
+    <string name="info5">versionName:</string>
+    <string name="info6">Post time::</string>
+    <string name="info7">Installation package Md5:</string>
+    <string name="info8">Installation package download address:</string>
+    <string name="info9">Installation package size:</string>
+    <string name="info10">Popup intervals （ms）:</string>
+    <string name="info11">Popup times:</string>
+    <string name="info12">Post type （0: Testing 1: Official）:</string>
+    <string name="info13">Popup type（1: recommendation 2: compulsory 3: manual）:</string>
+    <string name="info14">Picture address：</string>
+    <string name="t90">Reminder</string>
+    <string name="t91">You have not set the payment password yet. Please set the payment password.</string>
+    <string name="t92">Nickname</string>
+    <string name="t93">Please set a 6-bit payment password.</string>
+    <string name="t94">Please enter the phone verification code.</string>
+    <string name="t95">Set the payment password successfully!</string>
+    <string name="t96">Security of payment</string>
+    <string name="t97">Yuan/deal</string>
+    <string name="t98">Close</string>
+    <string name="t99">Failed to pass password verification</string>
+    <string name="t100">Gender</string>
+    <string name="s1">Skills</string>
+    <string name="s2">Please enter skills.</string>
+    <string name="s3">Brief introduction to Private tutor</string>
+    <string name="s4">None</string>
+    <string name="s5">{\"message\":\"Hello, please approve my application for being your friend.\",\"user\":{\"username\":\"</string>
+    <string name="s6">The application for being your friend has been sent successfully.</string>
+    <string name="s7">Hello, I have added you into the list of my friends.</string>
+    <string name="s8">Agreed</string>
+    <string name="s9">Rejected</string>
+    <string name="s10">Send a message</string>
+    <string name="s11">Added as a friend</string>
+    <string name="s12">Invalid user information</string>
+    <string name="s13">Personal information</string>
+    <string name="s14">Nickname</string>
+    <string name="s15">Gender</string>
+    <string name="s16">phone number</string>
+    <string name="s17">Company</string>
+    <string name="s18">Birthday</string>
+    <string name="s19">Hobby</string>
+    <string name="s20">Select hobby</string>
+    <string name="s21">Skills</string>
+    <string name="s22">Enter skills</string>
+    <string name="s23">Industry</string>
+    <string name="s24">Industry engaged in</string>
+    <string name="s25">Position</string>
+    <string name="s26">Your position</string>
+    <string name="s27">Mailbox</string>
+    <string name="s28">Your mailbox</string>
+    <string name="s29">Name</string>
+    <string name="s30">The birthday cannot be greater than the current time.</string>
+    <string name="s31">Sunday</string>
+    <string name="s32">Monday</string>
+    <string name="s33">Tuesday</string>
+    <string name="s34">Wednesday</string>
+    <string name="s35">Thursday</string>
+    <string name="s36">Friday</string>
+    <string name="s37">Saturday</string>
+    <string name="s38">yyyy-MM-dd HH:mm:ss</string>
+    <string name="s39">[year, month, day, hour, minute, second]</string>
+    <string name="s40">yyyy-MM-dd HH:mm:ss</string>
+    <string name="s41">Available when#</string>
+    <string name="s42">Discount</string>
+    <string name="s43">Free exchange</string>
+    <string name="s44">yuan Exchange with </string>
+    <string name="s45">Buy #</string>
+    <string name="s46">Present  #</string>
+    <string name="s47">Available when #</string>
+    <string name="s48">#.0  discount</string>
+    <string name="s49">Free exchange</string>
+    <string name="s50">Add #.00</string>
+    <string name="s51">Buy #.00</string>
+    <string name="s52">%.0fYuan/%dh%d</string>
+    <string name="s53">%.0fYuan/h</string>
+    <string name="s54">%.0fYuan/%dh</string>
+    <string name="s55">%.0fYuan/m</string>
+    <string name="s56">%.0fYuan/%dm</string>
+    <string name="s57">Yuan/h</string>
+    <string name="s58">System</string>
+    <string name="s59">Consumption</string>
+    <string name="s60">Top up</string>
+    <string name="s61">Refund</string>
+    <string name="s62">Cancel recharging</string>
+    <string name="s63">Conference room</string>
+    <string name="s64">Fitness course</string>
+    <string name="s65">ATLAS activity</string>
+    <string name="s66">Free for members</string>
+    <string name="s67">Completed</string>
+    <string name="s68">To be paid</string>
+    <string name="s69">Refunded</string>
+    <string name="s70">No limit to commercial tenants.</string>
+    <string name="s71">Reminder</string>
+    <string name="s72">Dialogue box</string>
+    <string name="s74">ATLAS splendid event recommendation</string>
+    <string name="s75">Take a picture</string>
+    <string name="s76">Select from the album</string>
+    <string name="s77">Uploading</string>
+    <string name="s78">Verify payment password</string>
+    <string name="s79">You need to pay</string>
+    <string name="s80">Pay with the balance</string>
+    <string name="s81">Pay with Alipay</string>
+    <string name="s82">Pay with WeChat</string>
+    <string name="s83">MM.dd</string>
+    <string name="s84">Surplus quota</string>
+    <string name="s85">Do not participate in promotional activities</string>
+    <string name="s86">Not completed</string>
+    <string name="w7">Sunday</string>
+    <string name="w1">Monday</string>
+    <string name="w2">Tuesday</string>
+    <string name="w3">Wednesday</string>
+    <string name="w4">Thursday</string>
+    <string name="w5">Friday</string>
+    <string name="w6">Saturday</string>
+    <string name="s88">Home page QR code</string>
+    <string name="s89">Find</string>
+    <string name="s90">yyyy-MMM</string>
+    <string name="s91">My reservation</string>
+    <string name="w17">Sun</string>
+    <string name="w11">Mon</string>
+    <string name="w12">Tue</string>
+    <string name="w13">Wed</string>
+    <string name="w14">Thur</string>
+    <string name="w15">Fri</string>
+    <string name="w16">Sat</string>
+    <string name="s92">Select participants</string>
+    <string name="s94">Payment succeeded</string>
+    <string name="s95">Payment error</string>
+    <string name="s96">Payment canceled</string>
+    <string name="s97">Press again for exit</string>
+    <string name="s98">Succeed in binding device</string>
+    <string name="e1">Activities</string>
+    <string name="e2">Topics</string>
+    <string name="e3">Chat</string>
+    <string name="s99">Expression</string>
+    <string name="m1">Lunar January</string>
+    <string name="m2">Lunar February</string>
+    <string name="m3">Lunar March</string>
+    <string name="m4">Lunar April</string>
+    <string name="m5">Lunar May</string>
+    <string name="m6">Lunar June</string>
+    <string name="m7">Lunar July</string>
+    <string name="m8">Lunar August</string>
+    <string name="m9">Lunar September</string>
+    <string name="m10">Lunar October</string>
+    <string name="m11">Winter month</string>
+    <string name="m12">The twelfth lunar month</string>
+    <string name="g1">甲</string>
+    <string name="g2">乙</string>
+    <string name="g3">丙</string>
+    <string name="g4">丁</string>
+    <string name="g5">戊</string>
+    <string name="g6">己</string>
+    <string name="g7">庚</string>
+    <string name="g8">辛</string>
+    <string name="g9">壬</string>
+    <string name="g10">癸</string>
+    <string name="z1">子</string>
+    <string name="z2">丑</string>
+    <string name="z3">寅</string>
+    <string name="z4">卯</string>
+    <string name="z5">辰</string>
+    <string name="z6">巳</string>
+    <string name="z7">午</string>
+    <string name="z8">未</string>
+    <string name="z9">申</string>
+    <string name="z10">酉</string>
+    <string name="z11">戌</string>
+    <string name="z12">亥</string>
+    <string name="sx1">Mouse</string>
+    <string name="sx2">Ox</string>
+    <string name="sx3">Tiger</string>
+    <string name="sx4">Rabbit</string>
+    <string name="sx5">Dragon</string>
+    <string name="sx6">Snake</string>
+    <string name="sx7">Horse</string>
+    <string name="sx8">Sheep</string>
+    <string name="sx9">Monkey</string>
+    <string name="sx10">Chicken</string>
+    <string name="sx11">Dog</string>
+    <string name="sx12">Pig</string>
+    <string name="my_act">My moments</string>
+    <string name="post_dynamic">Post moments</string>
+    <string name="tv_china">China</string>
+    <string name="tv_birthday">Your birthday</string>
+    <string name="tv_hint_">Referee phone number (optional)</string>
+    <string name="tv_input_company">Please enter your company name</string>
+    <!--yyyy-MM-dd&#160;-->
+    <string name="s100">MM-dd&#160;</string>
+    <string name="input_txt">Enter your text</string>
+    <string name="im_voice">[Voice]</string>
+    <string name="im_pic">[Picture]</string>
+    <string name="im_exist">exist</string>
+    <string name="im_save">saved</string>
+    <string name="add_friends_">Add you as a friend</string>
+    <string name="thumb">Likes</string>
+    <string name="answer_">Replies</string>
+    <string name="followed">followed</string>
+    <string name="txt_add_friends">Add friends</string>
+    <string name="dynamic_like">&#160;Likes</string>
+    <string name="dynamic_comment">&#160;Comments</string>
+    <string name="company_none">· None Company</string>
+    <string name="delete_dynamic">Delete moments</string>
+    <string name="delete">Delete</string>
+    <string name="tag_share">Sharing success</string>
+    <string name="input_phone_error">Please enter a valid cell phone number</string>
+    <string name="txt_delete">Determine delete moments?</string>
+    <string name="txt_delete_comment">Deleting comments?</string>
+    <string name="txt_logout">Do you decide to quit?</string>
+    <string name="input_voice">Pressed to talk</string>
+    <string name="chat_audio_too_short">The recording is short, please try again</string>
+    <string name="chat_audio_too_long">The recording is long, please try again</string>
+    <string name="chat_up_finger">Slide on to cancel sending</string>
+    <string name="input_text_img">Moments can not be empty</string>
+    <string name="all_world">Global</string>
+    <string name="ls_near">Nearby</string>
+
+    <string name="chat_title">Message</string>
+    <string name="chat_dynamic">Moments message</string>
+    <string name="chat_sports">Sports </string>
+    <string name="chat_workplace">Work Place</string>
+    <string name="chat_kitchen">Kitchen</string>
+    <string name="chat_notice">Notice</string>
+    <string name="language">Language</string>
+
+    <string name="language_text">English</string>
+    <string name="workplace">Work Place</string>
+
+    <string name="time_chat_dynamic">HH:mm MM-dd</string>
+    <string name="look_for_more">More ></string>
+    <string name="no_friends">No new friend invitations</string>
+
+    <string name="delete_friends">Delete this friend ?</string>
+    <string name="enter_new_phone">Please enter a new phone number</string>
+    <string name="clear_all_chat">Clear all records</string>
+    <string name="add_to_shopping_car">Add to shopping cart</string>
+</resources>

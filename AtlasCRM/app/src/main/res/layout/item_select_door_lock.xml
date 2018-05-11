@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_hight"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:id="@+id/rl_select_lock_main"
+    android:paddingLeft="@dimen/back_gauge_big"
+    android:paddingRight="@dimen/back_gauge_big">
+
+
+    <TextView
+        android:id="@+id/tv_door_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/back_gauge_small"
+        android:text="nihs"
+        android:textSize="@dimen/text_big" />
+
+    <ImageView
+        android:id="@+id/iv_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/back_gauge_small"
+        android:src="@drawable/pay_channel_select" />
+
+    <View
+        style="@style/devide_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

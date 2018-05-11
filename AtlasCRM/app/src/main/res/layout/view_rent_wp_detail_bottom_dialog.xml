@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color">
+
+            <tangxiaolv.com.library.EffectiveShapeView
+                android:id="@+id/shape_iv"
+                android:layout_width="144dp"
+                android:layout_height="104dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_product_thum"
+                app:shape="round_rectangle" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shape_iv"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/shape_iv"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="寰图Work Place商务企业1380特惠套餐"
+                android:textColor="@color/primary_text_drak"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="8dp"
+                android:text="寰图Work Place"
+                android:textColor="@color/secondary_text_drak" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_below="@id/tv_sub_title"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="bottom"
+                android:text="￥1380"
+                android:textColor="@color/red"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/DividerHorizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/back_gauge_big"
+            android:background="@color/white_color"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:textColor="@color/primary_text_drak" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/back_gauge_large"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="2017.4.7"
+
+                android:textColor="@color/gray_simple"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/back_gauge_big"
+            android:background="@color/white_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_61"
+                android:textColor="@color/primary_text_drak"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/DividerVertical"
+                android:layout_margin="@dimen/back_gauge_big" />
+
+            <EditText
+                android:id="@+id/et_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="number"
+                android:text="1"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/back_gauge_big"
+            android:background="@color/white_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_62"
+                android:textColor="@color/primary_text_drak"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/DividerVertical"
+                android:layout_margin="@dimen/back_gauge_big" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@color/dark_gray"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color">
+
+            <TextView
+                android:id="@+id/btn_pay"
+                style="@style/SubmitButton"
+                android:text="@string/text_63" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

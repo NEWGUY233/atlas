@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.register.RegInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_register_top" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/back_gauge_huge"
+            android:orientation="horizontal">
+
+            <com.atlas.crmapp.widget.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="@dimen/back_gauge_standard"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                app:srcCompat="@drawable/header_icon" />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_big"
+                android:layout_toRightOf="@id/iv_header"
+                android:text="@string/upload_you_header"
+                android:textColor="@color/gray"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/back"
+            android:layout_marginTop="@dimen/back_gauge_big_huge"
+            android:layout_marginRight="@dimen/back_gauge_big"
+            android:padding="@dimen/back_gauge_big"
+            android:textColor="@color/gray_simple"
+            android:textSize="@dimen/text_big"  />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/back_gauge_huge"
+        android:layout_marginRight="@dimen/back_gauge_huge"
+        android:orientation="vertical">
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/etNickName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@null"
+            android:hint="@string/please_input_you_name"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+        <View style="@style/devide_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sex_selected" />
+
+            <TextView
+                android:id="@+id/tv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_gauge_standard"
+                android:text="@string/male" />
+
+            <ImageView
+                android:id="@+id/iv_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:src="@drawable/sex_not_select" />
+
+            <TextView
+                android:id="@+id/tv_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_gauge_standard"
+                android:text="@string/female" />
+
+        </LinearLayout>
+
+        <View style="@style/devide_line" />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/etBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/please_input_your_birthday"
+            android:maxLength="25"
+            android:maxLines="1" />
+
+        <View style="@style/devide_line" />
+
+        <EditText
+            android:id="@+id/etCompany"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/please_input_company_name"
+            android:maxLength="25"
+            android:maxLines="1" />
+
+        <View style="@style/devide_line" />
+
+
+        <EditText
+            android:id="@+id/etReferrerMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:singleLine="true"
+            android:background="@null"
+            android:hint="@string/please_input_referrer_mobile"
+            android:maxLength="11"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <View style="@style/devide_line" />
+
+        <TextView
+            android:id="@+id/tv_complete_login"
+            style="@style/SubmitButtonLeftRight"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:alpha="0.5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/complete" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

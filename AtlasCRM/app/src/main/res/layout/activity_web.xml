@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.commonactivity.WebActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/titlebar" />
+
+    <com.atlas.crmapp.util.ProgressWebView
+        android:id="@+id/webViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/close"
+        android:src="@mipmap/nav_icon_close"
+        android:paddingTop="14dp"
+        android:paddingLeft="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="14dp"
+        android:maxLength="140"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="14dp"
+        android:id="@+id/ed_input"
+        android:layout_gravity="center_vertical"
+        android:background="#F1F1F1"
+        android:gravity="top"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:hint="@string/input_text"
+        android:textColorHint="#939393"
+        android:textSize="16sp"
+        android:textColor="#2b3039"
+        />
+
+    <TextView
+        android:id="@+id/send"
+        android:gravity="center_vertical"
+        android:paddingRight="21dp"
+        android:drawablePadding="14dp"
+        android:drawableLeft="@mipmap/im_icon_talk_send"
+        android:text="@string/send"
+        android:textSize="16sp"
+        android:textColor="#2b3039"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.atlas.crmapp.usercenter.CompanyActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        style="@style/item_standard_white"
+        android:layout_marginTop="@dimen/back_gauge_big">
+
+        <EditText
+            android:id="@+id/etCompany"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height"
+                android:background="@color/white_color"
+                app:tabBackground="@color/white_color"
+                app:tabIndicatorColor="@color/btn_yellow"
+                app:tabSelectedTextColor="@color/tab_select"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearanceInverse"
+                app:tabTextColor="@color/tab_text" />
+            <View
+                android:layout_below="@id/tab_layout"
+                android:layout_width="match_parent"
+                android:background="@color/bg_gray"
+                android:layout_height="1dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/tab_layout" />
+
+            <RelativeLayout
+                android:id="@+id/ll_popo_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/popup_bg"
+                android:visibility="gone">
+                <View
+                    android:id="@+id/v_alpha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ListView
+                    android:id="@+id/lv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:layout_alignParentBottom="true"
+                    android:divider="@color/divider_gray"
+                    android:dividerHeight="1dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--下期-->
+        <com.atlas.crmapp.view.BottomAccountView
+            android:id="@+id/v_bottom_account"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</RelativeLayout>

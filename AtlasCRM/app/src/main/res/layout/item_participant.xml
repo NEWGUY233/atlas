@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/item_participant_avatar"
+        android:layout_width="@dimen/head_icon_height_width"
+        android:layout_height="@dimen/head_icon_height_width"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/back_gauge_small"
+        android:layout_marginRight="@dimen/back_gauge_big"
+        android:src="@drawable/header_icon" />
+
+    <TextView
+        android:id="@+id/item_participant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_participant_avatar"
+        android:layout_marginTop="@dimen/back_gauge_small"
+        android:layout_toRightOf="@id/item_participant_avatar"
+        android:text="name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/item_participant_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_participant_avatar"
+        android:layout_marginBottom="@dimen/back_gauge_small"
+        android:layout_toRightOf="@id/item_participant_avatar"
+        android:text="company"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/back_gauge_standard"
+        android:src="@drawable/ic_user_arrow_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_gray" />
+
+</RelativeLayout>

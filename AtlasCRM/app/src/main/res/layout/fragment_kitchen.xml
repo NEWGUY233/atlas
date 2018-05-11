@@ -1,0 +1,86 @@
+<com.atlas.crmapp.widget.PagerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Banner -->
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/dsv_banner"
+            style="@style/DiscreteScrollView"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray" />
+        <com.atlas.crmapp.view.TitleAndMoreView
+            android:id="@+id/v_title_more_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/back_gauge_small">
+        </com.atlas.crmapp.view.TitleAndMoreView>
+        <!-- 本月推荐 -->
+
+        <com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView
+            android:id="@+id/vp_recommd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray" />
+        <com.atlas.crmapp.view.TitleAndMoreView
+            android:id="@+id/v_title_more_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/back_gauge_small"
+            android:layout_marginTop="@dimen/back_gauge_small">
+
+        </com.atlas.crmapp.view.TitleAndMoreView>
+        <!-- 活动推荐 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/viewpager_act"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="216dp"-->
+                <!--android:layout_below="@id/tv_act_more"-->
+                <!--android:layout_marginTop="16dp"/>-->
+
+            <!--<com.shizhefei.view.indicator.FixedIndicatorView-->
+                <!--android:id="@+id/indicator_act"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/viewpager_act"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="5dp"/>-->
+
+            <com.atlas.crmapp.widget.MyListView
+                android:id="@+id/recommend_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</com.atlas.crmapp.widget.PagerScrollView>
+
+
+

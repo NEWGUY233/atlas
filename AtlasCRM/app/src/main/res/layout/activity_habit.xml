@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:background="#FFFFFFFF">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_habits"
+            android:textColor="#FF2B3039"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_toRightOf="@+id/tv_title"
+            android:text="（0/3）"
+            android:layout_marginBottom="3dp"
+            android:textColor="#FF2B3039"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_title"
+            android:text="@string/back"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#929499"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        layout="@layout/include_recycler"
+        />
+    <TextView
+        android:id="@+id/tv_complete_login"
+        style="@style/SubmitButtonLeftRight"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/save" />
+</LinearLayout>

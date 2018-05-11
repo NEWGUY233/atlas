@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_white_circular"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:text="@string/txt_logout"
+        android:textColor="#FF000000"
+        android:textSize="17sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0D000050"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textColor="#FF007AFF"
+            android:textSize="17sp"
+            />
+
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="43.5dp"
+            android:background="#0D000050"
+            />
+
+        <TextView
+            android:id="@+id/submit"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/done"
+            android:textColor="#FF007AFF"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

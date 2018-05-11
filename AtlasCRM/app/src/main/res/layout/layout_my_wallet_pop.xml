@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/wallet_recharge_record"
+        style="@style/MenuItem">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_recharge_record" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/recharge_detail" />
+    </LinearLayout>
+
+    <View style="@style/devide_line" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/wallet_paw_manager"
+        style="@style/MenuItem">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_paw_managers" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/set_pay_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_security"
+        style="@style/MenuItem">
+
+        <ImageView
+            style="@style/MenuDetailIcon"
+            android:src="@drawable/ic_recharge_security" />
+
+        <TextView
+            style="@style/MenuDetailTv"
+            android:text="@string/text_22" />
+    </LinearLayout>
+</LinearLayout>

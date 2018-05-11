@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<include
+    android:visibility="gone"
+    layout="@layout/titlebar_statusbar" />
+
+    <com.atlas.crmapp.widget.PagerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white_color">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Banner -->
+            <com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView_
+                android:id="@+id/pager"
+                android:background="@color/white_color"
+                android:layout_height="234dp"
+                android:layout_width="match_parent"/>
+
+            <View
+                style="@style/DividerHorizontal"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/back_gauge_big"
+                android:layout_marginTop="@dimen/back_gauge_big"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.atlas.crmapp.view.ImageAndTextBtnView
+                    android:id="@+id/btn_private_introducer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/back_gauge_standard"
+                    android:paddingRight="@dimen/back_gauge_standard" />
+
+                <com.atlas.crmapp.view.ImageAndTextBtnView
+                    android:id="@+id/btn_reserve_course"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/back_gauge_standard"
+                    android:paddingRight="@dimen/back_gauge_standard" />
+
+                <com.atlas.crmapp.view.ImageAndTextBtnView
+                    android:id="@+id/btn_reserve_experience"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/back_gauge_standard"
+                    android:paddingRight="@dimen/back_gauge_standard" />
+            </LinearLayout>
+
+            <View style="@style/DividerHorizontal" />
+            <!-- 本月推荐 -->
+            <com.atlas.crmapp.view.TitleAndMoreView
+                android:id="@+id/v_title_more_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_small"></com.atlas.crmapp.view.TitleAndMoreView>
+
+
+            <com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView
+                android:id="@+id/vp_recommd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.atlas.crmapp.view.ViewPagerIndicatorOnBottomView>
+
+
+            <View style="@style/DividerHorizontal" />
+
+            <com.atlas.crmapp.view.TitleAndMoreView
+                android:id="@+id/v_title_more_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/back_gauge_small"
+                android:layout_marginTop="@dimen/back_gauge_small">
+
+            </com.atlas.crmapp.view.TitleAndMoreView>
+            <!-- 活动推荐 -->
+            <com.atlas.crmapp.widget.MyListView
+                android:id="@+id/recommend_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00000000" />
+        </LinearLayout>
+
+
+    </com.atlas.crmapp.widget.PagerScrollView>
+
+</LinearLayout>
+

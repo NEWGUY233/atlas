@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/half_tran"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/nav_icon_white"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/back"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/text_9"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:paddingRight="11dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

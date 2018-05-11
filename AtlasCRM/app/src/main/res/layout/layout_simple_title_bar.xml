@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/TitleBar">
+
+    <ImageView
+        android:id="@+id/tb_iv_back"
+        style="@style/TitleBarIcon"
+        android:layout_width="40dp"
+        android:scaleType="centerInside"
+        android:layout_height="48dp"
+        android:src="@drawable/white_back" />
+
+    <TextView
+        android:id="@+id/tb_tv_title"
+        style="@style/TitleBarTitle"
+        android:text="@string/order_detail"/>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_deduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/item_hight_big">
+
+        <View style="@style/DividerHorizontal" />
+
+        <TextView
+            android:id="@+id/tv_icon_deduction"
+            style="@style/OrderIcon"
+            android:layout_centerVertical="true"
+            android:background="@drawable/order_selected"
+            android:text="@string/text_53"
+            android:textColor="@color/white_color" />
+
+        <TextView
+            android:id="@+id/tv_discout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_icon_deduction"
+            android:text="@string/text_54"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/tv_deduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/back_gauge_large"
+            android:layout_marginLeft="@dimen/back_gauge_big"
+            android:layout_marginRight="@dimen/back_gauge_big_huge"
+            android:layout_marginTop="@dimen/back_gauge_large"
+            android:layout_toRightOf="@id/tv_discout"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="20fen"
+            android:textColor="@color/orange" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/item_hight_big">
+
+        <View style="@style/devide_line" />
+
+        <TextView
+            android:id="@+id/tv_icon_benefit"
+            style="@style/OrderIcon"
+            android:layout_centerVertical="true"
+            android:background="@drawable/order_selected"
+            android:text="@string/text_55"
+            android:textColor="@color/white_color" />
+
+        <TextView
+            android:id="@+id/tv_benefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_icon_benefit"
+            android:text="@string/text_56"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/tv_benefit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/back_gauge_large"
+            android:layout_marginLeft="@dimen/back_gauge_large"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="@dimen/back_gauge_large"
+            android:layout_toRightOf="@id/tv_benefits"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="八折优惠"
+            android:textColor="@color/orange" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_benefit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_discount_name"
+            android:layout_alignBottom="@+id/tv_discount_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/item_hight_big">
+
+        <View style="@style/devide_line" />
+
+        <TextView
+            android:id="@+id/tv_icon_coupon"
+            style="@style/OrderIcon"
+            android:layout_centerVertical="true"
+            android:background="@drawable/order_selected"
+            android:text="@string/text_57"
+            android:textColor="@color/white_color" />
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_icon_coupon"
+            android:text="@string/text_58"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/back_gauge_large"
+            android:layout_marginLeft="@dimen/back_gauge_big"
+            android:layout_marginRight="@dimen/back_gauge_big_huge"
+            android:layout_marginTop="@dimen/back_gauge_large"
+            android:layout_toRightOf="@id/tv_coupon"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="咖啡"
+            android:textColor="@color/orange" />
+
+        <ImageView
+            android:id="@+id/iv_coupon_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/back_gauge_standard"
+            android:paddingLeft="@dimen/back_gauge_huge"
+            android:paddingRight="@dimen/back_gauge_big"
+            android:paddingTop="@dimen/back_gauge_standard"
+            android:src="@drawable/ic_user_arrow_right" />
+
+    </RelativeLayout>
+
+    <View style="@style/devide_line" />
+
+</LinearLayout>

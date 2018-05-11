@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_big"
+                android:background="@color/bg_gray" />
+
+
+            <com.atlas.crmapp.view.ActivitiesSimpleInfoView
+                android:id="@+id/v_simple_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_big" />
+
+
+            <View
+                style="@style/devide_line"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginRight="@dimen/back_gauge_standard" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_order_detail_csr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/back_gauge_huge"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_remain_used_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/back_gauge_huge"
+                    android:layout_marginTop="@dimen/back_gauge_huge"
+                    android:text="@string/activity_remain_and_used_num"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/tv_avild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_remain_used_num"
+                    android:layout_marginTop="@dimen/back_gauge_standard"
+                    android:text="@string/validity_times"
+                    android:textColor="@color/gray_little" />
+
+                <TextView
+                    android:id="@+id/tv_set_avild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_avild"
+                    android:layout_marginLeft="26dp"
+                    android:layout_toRightOf="@id/tv_avild" />
+
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_avild"
+                    android:layout_marginTop="@dimen/back_gauge_standard"
+                    android:text="@string/order_code"
+                    android:textColor="@color/gray_little" />
+
+
+                <TextView
+                    android:id="@+id/tv_set_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_order"
+                    android:layout_alignLeft="@id/tv_set_avild" />
+
+
+                <TextView
+                    android:id="@+id/tv_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_order"
+                    android:layout_marginTop="@dimen/back_gauge_standard"
+                    android:text="@string/create_man"
+                    android:textColor="@color/gray_little" />
+
+
+                <TextView
+                    android:id="@+id/tv_set_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_create"
+                    android:layout_alignLeft="@id/tv_set_avild" />
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/devide_line"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginRight="@dimen/back_gauge_standard" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_huge"
+                android:background="@color/white_color" />
+
+
+            <com.atlas.crmapp.view.ActivitiesContactView
+                android:id="@+id/v_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_big"
+                android:layout_marginBottom="@dimen/item_hight_big"
+                android:background="@color/bg_gray" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight_big"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_color">
+
+        <View
+            style="@style/devide_line"
+            android:layout_marginRight="110dp" />
+
+        <TextView
+            android:id="@+id/tv_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/need_verification_num"
+            android:textColor="@color/gray_little"
+            android:textSize="@dimen/text_small" />
+
+
+        <ImageView
+            android:id="@+id/iv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/tv_need"
+            android:paddingLeft="@dimen/back_gauge_standard"
+            android:src="@drawable/icon_num_sub" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_current_num"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_sub">
+
+            <TextView
+                android:id="@+id/tv_current_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0" />
+
+            <View
+                style="@style/devide_line"
+                android:layout_alignParentBottom="true" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_current_num"
+            android:paddingRight="@dimen/back_gauge_standard"
+            android:src="@drawable/icon_num_add" />
+
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/btn_yellow"
+            android:gravity="center"
+            android:text="@string/enter"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

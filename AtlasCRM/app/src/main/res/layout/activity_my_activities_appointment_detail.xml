@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_app_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/back_gauge_big"
+            android:orientation="vertical">
+
+            <com.atlas.crmapp.view.ActivitiesSimpleInfoView
+                android:id="@+id/v_simple_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/back_gauge_big" />
+
+
+            <View
+                style="@style/devide_line"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginRight="@dimen/back_gauge_standard" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color">
+
+                <TextView
+                    android:id="@+id/valid_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valid_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="32dp" />
+
+                <com.atlas.crmapp.view.CodeImageView
+                    android:id="@+id/v_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/valid_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/back_gauge_big" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/back_gauge_huge"
+                    android:id="@+id/tv_activties_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_code"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <View
+                style="@style/devide_line"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginRight="@dimen/back_gauge_standard" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_standard"
+                android:background="@color/white_color" />
+
+
+            <com.atlas.crmapp.view.ActivitiesContactView
+                android:id="@+id/v_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/back_gauge_big"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

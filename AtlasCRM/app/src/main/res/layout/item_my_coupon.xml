@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_gauge_standard"
+        android:background="@color/bg_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/coupon_content"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v_line">
+
+        <tangxiaolv.com.library.EffectiveShapeView
+            android:id="@+id/img_coupon_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:shape="round_rectangle" />
+
+        <ImageView
+            android:id="@+id/img_coupon_middle_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/icon_coupon_coffee" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_coupon_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginTop="@dimen/back_gauge_small"
+                android:maxLines="2"
+                android:text="hell"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_coupon_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/back_gauge_standard"
+                android:layout_marginTop="@dimen/back_gauge_standard"
+                android:maxLines="1"
+                android:textSize="@dimen/text_small"
+                android:text="有效期还剩下100天"
+                android:textColor="@color/white_color"
+                 />
+
+            <Button
+                android:id="@+id/btn_coupon_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:drawableRight="@drawable/expand_down"
+                android:gravity="center"
+                android:text="@string/text_13"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/coupon_left_triangle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/back_gauge_standard"
+            android:layout_toLeftOf="@id/img_triangle"
+            android:src="@drawable/coupon_qrcode" />
+
+        <TextView
+            android:id="@+id/tv_coupon_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:text="x12"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_large" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_coupon_moreDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coupon_content"
+        android:layout_marginTop="-10dp"
+        android:paddingBottom="@dimen/back_gauge_standard"
+        android:paddingLeft="@dimen/back_gauge_standard"
+        android:paddingRight="@dimen/back_gauge_standard"
+        android:paddingTop="18dp" />
+
+
+</RelativeLayout>

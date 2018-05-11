@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="80dp"
+    android:layout_marginRight="@dimen/back_gauge_small"
+    android:orientation="vertical">
+
+    <tangxiaolv.com.library.EffectiveShapeView
+        android:id="@+id/iv_act_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/back_gauge_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_product_thum"
+        app:shape="round_rectangle" />
+</LinearLayout>

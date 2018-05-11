@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:text="@string/close"
+        android:textColor="#FF7D7D7D"
+        android:textSize="15sp"
+        />
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/pic"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="51dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/print_detail_content_1"
+        android:textColor="#FF585858"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center|bottom"
+        android:id="@+id/btn_submit"
+        android:layout_height="50dp"
+        style="@style/SubmitButtonLeftRight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:textColor="#FF2B3039"
+        android:textSize="18sp"
+        android:text="@string/print_detail_btn_1" />
+
+</LinearLayout>

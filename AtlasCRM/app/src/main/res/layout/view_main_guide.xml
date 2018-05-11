@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:id="@+id/ll_main"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_step_one"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/back_gauge_large"
+            android:src="@drawable/guide_arrow_down" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/back_gauge_standard"
+            android:text="@string/guide_down"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_down"
+            android:layout_below="@id/iv_down"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/guide_hand" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_step_two"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/back_gauge_big"
+        android:layout_marginRight="@dimen/back_gauge_big">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/guide_arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="90dp"
+            android:text="@string/guide_left_right"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/guide_arrow_right" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/back_gauge_large"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:src="@drawable/guide_hand" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/back_gauge_large"
+            android:layout_marginTop="@dimen/back_gauge_standard"
+            android:src="@drawable/guide_hand" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_step_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="@dimen/back_gauge_big_huge"
+        android:text="@string/guide_step_one"
+        android:textColor="@color/white_color" />
+
+
+</LinearLayout>

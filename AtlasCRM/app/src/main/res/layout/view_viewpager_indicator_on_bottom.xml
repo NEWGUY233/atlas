@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_recomm_montyly"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        />
+
+    <com.shizhefei.view.indicator.FixedIndicatorView
+        android:id="@+id/indicator_recomm_monthly"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="@dimen/back_gauge_big"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
